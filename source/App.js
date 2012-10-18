@@ -1,13 +1,24 @@
 enyo.kind({
+    //Kind name and couple of options
 	name: "App",
 	fit: true,
-    noStretch: true,
     kind:"Panels",
     classes:"app-panels, onyx",
     arrangerKind: "CollapsingArranger",
-	components: [  {name: "Panel1", components: [ {kind:"onyx.MoreToolbar", components: [ {kind: "onyx.Grabber",}, {content: "Panel1"}],}],},
-     {name: "Panel2", components: [ {kind:"onyx.MoreToolbar", components: [ {kind: "onyx.Grabber",}, {content: "Panel2"}],}],},
-     {name: "Panel3", components: [ {kind:"onyx.MoreToolbar", components: [ {kind: "onyx.Grabber",}, {content: "Panel3"}],}],}],
+	//Components
+    components: [ 
+        //The 1st Panel that will contain a scoller to show the tweets, the toolbar will contain the view picker.
+        {name: "Panel1", components: [ 
+            {kind:"onyx.MoreToolbar", components: [ 
+                {kind: "onyx.Grabber",}, {content: "Panel1"}
+                ],  }   ],    },
+        //The second Panel will show the tweet, images and comments. 
+        {name: "Panel2", components: [ 
+            //More toolbar.
+        {kind:"onyx.MoreToolbar", components: [ 
+                {kind: "onyx.Grabber",}, {content: "Panel2"}
+                ],  }   ],  },
+ ],
     
 
 });

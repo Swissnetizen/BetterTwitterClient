@@ -1,7 +1,7 @@
 enyo.depends(
 	"$lib/layout",
 	"$lib/onyx",
-    "Components.js",
+    "tweet.js",
 	"App.css",
 	"App.js"
 );
