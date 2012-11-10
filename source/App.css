@@ -1,11 +1,35 @@
-/*
-	Put anything you reference with "url()" in ../assets/
-	This way, you can minify your application, and just remove the "source" folder for production
+/* CSS for panel1 */
+.Panel1 {
+    width: 20%; /*Can be 16.105%*/
 
-#app {
-	margin: 16px;
-	border-radius: 4px;
-	background-color: silver;
-	padding: 16px;
+
 }
-*/
+
+/* CSS for onyx.items, adds gridlines */
+.onyx-item {
+    border-top: 1px solid rgba( 255, 255, 255, 0.5 );
+	border-bottom: 1px solid rgba( 0, 0, 0, 0.2 );
+
+	padding: 14px;
+
+}
+
+
+/* CSS for the tweet kind*/
+
+.Tweet-Image {
+    width: 50px; 
+    height: 50px; 
+    float: left; 
+    padding-right: 10px;   
+}
+
+.Tweet-Message {
+    font-size: 75%;
+}
+
+.Tweet-Handle {
+    color: gray;
+    font-size: 65%;
+    
+}

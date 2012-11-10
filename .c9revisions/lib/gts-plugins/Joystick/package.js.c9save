@@ -1,0 +1,2 @@
+{"ts":1352569191819,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"enyo.depends(\n\t\"Joystick.js\"\n);\n"]],"start1":0,"start2":0,"length1":0,"length2":32}]],"length":32}
+{"contributors":[],"silentsave":false,"ts":1352569211779,"patch":[[{"diffs":[[0,"pends(\n\t"],[1,"\"$lib/canvas\",\n    "],[0,"\"Joystic"]],"start1":7,"start2":7,"length1":16,"length2":35},{"diffs":[[0,"ick.js\"\n"],[1,"    \n"],[0,");\n"]],"start1":40,"start2":40,"length1":11,"length2":16}]],"length":56,"saved":false}
