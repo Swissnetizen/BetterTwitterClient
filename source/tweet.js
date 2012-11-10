@@ -1,7 +1,7 @@
 //Tweet kind based on tutorial tweet kind.
 
 enyo.kind({
-  name: "sam.Tweet",
+  name: "Sam.Tweet",
   kind: "onyx.Item",
   components: [
       //The container.

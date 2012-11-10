@@ -1,0 +1,2 @@
+enyo.kind({
+    kind: "sam.

@@ -63,7 +63,7 @@ enyo.kind({
  //Prepeares a tweet and adds it to tweetlist  
  addTweet: function(inResult) {
     this.createComponent({
-      kind: "sam.Tweet",
+      kind: "Sam.Tweet",
       container: this.$.TweetList,
       icon: inResult.profile_image_url_https,
       UserName: inResult.from_user_name,

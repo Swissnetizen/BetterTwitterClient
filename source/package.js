@@ -3,6 +3,7 @@ enyo.depends(
 	"$lib/onyx",
     "$lib/gts-plugins",
     "tweet.js",
+    "BigTweet.js",
 	"App.css",
 	"App.js"
 );

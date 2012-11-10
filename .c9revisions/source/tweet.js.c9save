@@ -17,3 +17,4 @@
 {"ts":1352571582780,"patch":[[{"diffs":[[0,"+ \":\");\n"],[1,"        }\n"],[0,"}\n  \n  \n"]],"start1":1682,"start2":1682,"length1":16,"length2":26}]],"length":1711,"saved":false}
 {"ts":1352573479814,"patch":[[{"diffs":[[0,"nd: "],[-1,"enyo.Control"],[1,"\"onyx.Item\""],[0,",\n  "]],"start1":77,"start2":77,"length1":20,"length2":19},{"diffs":[[0,"    "],[-1," {kind: \"onyx.Item\", name: \"Container\", components: ["],[0,"\n   "]],"start1":134,"start2":134,"length1":61,"length2":8},{"diffs":[[0,",},\n"],[-1,"        ],},"],[0,"\n   "]],"start1":487,"start2":487,"length1":20,"length2":8}]],"length":1645,"saved":false}
 {"ts":1352573625917,"patch":[[{"diffs":[[0," name: \""],[1,"sam."],[0,"Tweet\",\n"]],"start1":57,"start2":57,"length1":16,"length2":20}]],"length":1649,"saved":false}
+{"ts":1352573777398,"patch":[[{"diffs":[[0," name: \""],[-1,"s"],[1,"S"],[0,"am.Tweet"]],"start1":57,"start2":57,"length1":17,"length2":17}]],"length":1649,"saved":false}
