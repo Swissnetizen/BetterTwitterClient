@@ -1,2 +1,15 @@
+//BigTweet Kind that wil display more information
+
 enyo.kind({
-    kind: "sam.
+    kind: "Sam.Tweet",
+    name: "Sam.BigTweet",
+
+
+
+
+
+
+
+
+});
+    
