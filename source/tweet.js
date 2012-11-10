@@ -40,8 +40,8 @@ enyo.kind({
   handleChanged: function() {
         //Checks if the Handle and User's Name are the same, it doesn't make  sense to show the same thing twice
         if (this.handle !== this.UserName) {
-            this.$.handle.setContent(" @" + this.handle);
-        } else {
+            this.$.handle.setContent(" @" + this.handle + "\n");
+        } else if (this.handle === this.UserName) {
             this.$.handle.setContent("");
         }
   },
@@ -50,8 +50,12 @@ enyo.kind({
         this.$.text.setContent(this.text);
   },
   UserNameChanged: function() {
-        this.$.UserName.setContent(this.UserName + ":");
-  }
+        if (this.UserName !== this.handle) {
+            this.$.UserName.setContent(this.UserName + ":");
+        } else if (this.UserName === this.handle) {
+            this.$.UserName.setContent("@" + this.UserName + ":");
+        }
+}
   
   
 });
