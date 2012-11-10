@@ -40,7 +40,7 @@ enyo.kind({
                 {kind: "onyx.Grabber", ontap: "SwitchPanel",}, {content: "Panel2"}
                 //End of More Toolbar
                 ],  },
-                {kind: "Tweet", handle: "Samarthwiz", text: "Hello world!", icon: "http://a0.twimg.com/profile_images/1276099630/f23a8e27-71cf-4140-8e4a-6ed6338441f2_normal.png",}
+            
                //End of Panel2
                 ],  },
  
@@ -63,7 +63,7 @@ enyo.kind({
  //Prepeares a tweet and adds it to tweetlist  
  addTweet: function(inResult) {
     this.createComponent({
-      kind: Tweet,
+      kind: "sam.Tweet",
       container: this.$.TweetList,
       icon: inResult.profile_image_url_https,
       UserName: inResult.from_user_name,
