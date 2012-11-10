@@ -2,17 +2,17 @@
 
 enyo.kind({
   name: "Tweet",
-  kind: enyo.Control,
+  kind: "onyx.Item",
   components: [
       //The container.
-      {kind: "onyx.Item", name: "Container", components: [
+     
           //Picture of the person who posted the tweet
           {tag: "img", name: "picture", classes: "Tweet-Image",},
           //Name of the person who posted the tweet
           { tag: "b", name: "UserName"}, {name: "handle", classes: "Tweet-Handle", tag: "div",},
           //The tweet itself
           {name: "text", classes: "Tweet-Message",},
-        ],},
+
     ],
     
     
