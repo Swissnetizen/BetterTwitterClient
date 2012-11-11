@@ -20,7 +20,7 @@ enyo.kind({
                     //Input
                     {kind: "onyx.Input", name: "SearchTerm", placeholder: "Search", onkeydown: "searchOnEnter",},
                         //The image that makes the search box more pleasing.
-                        {kind: "Image", src: "http://enyojs.com/tutorial/onyx/search-input-search.png", ontap: "Search",},
+                        {tag: "Image", src: "assets/search-input-search.png", ontap: "Search",},
                 //End of SearchTerm
                 ],},
                 //End of more toolbar
@@ -33,14 +33,14 @@ enyo.kind({
         
         
         //The second Panel will show the tweet, images and comments. 
-        {name: "Panel2", classes: "onyx", components: [ 
+        {name: "Tweet", classes: "onyx", components: [ 
             //More toolbar.
            
         {kind:"onyx.MoreToolbar", components: [ 
                 {kind: "onyx.Grabber", ontap: "SwitchPanel",}, {content: "Panel2"}
                 //End of More Toolbar
                 ],  },
-            
+            {kind: "Sam.BigTweet", UserName: "Samarth AGARWAL"}
                //End of Panel2
                 ],  },
  
@@ -68,7 +68,7 @@ enyo.kind({
       icon: inResult.profile_image_url_https,
       UserName: inResult.from_user_name,
       handle: inResult.from_user,
-      text: inResult.text
+      Message: inResult.text,
     })
  },
     

@@ -3,6 +3,7 @@
 enyo.kind({
     kind: "Sam.Tweet",
     name: "Sam.BigTweet",
+    
 
 
 

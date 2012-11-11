@@ -1,2 +1,3 @@
 {"ts":1352573734262,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"enyo.kind({\n    kind: \"sam."]],"start1":0,"start2":0,"length1":0,"length2":27}]],"length":27}
 {"contributors":[],"silentsave":false,"ts":1352574691272,"patch":[[{"diffs":[[1,"//BigTweet Kind that wil display more information\n\n"],[0,"enyo.kin"]],"start1":0,"start2":0,"length1":8,"length2":59},{"diffs":[[0,"d: \""],[-1,"s"],[1,"S"],[0,"am."],[1,"Tweet\",\n    name: \"Sam.BigTweet\",\n\n\n\n\n\n\n\n\n});\n    "]],"start1":70,"start2":70,"length1":8,"length2":58}]],"length":128,"saved":false}
+{"ts":1352622733507,"patch":[[{"diffs":[[0,"Tweet\",\n"],[1,"    \n"],[0,"\n\n\n\n\n\n\n\n"]],"start1":104,"start2":104,"length1":16,"length2":21}]],"length":133,"saved":false}
