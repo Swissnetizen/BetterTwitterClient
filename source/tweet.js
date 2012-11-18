@@ -11,18 +11,21 @@ enyo.kind({
           //Name of the person who posted the tweet
           { tag: "b", name: "UserName"}, {name: "handle", classes: "Tweet-Handle", tag: "div",},
           //The tweet itself
-          {name: "text", classes: "Tweet-Message",},
+          {name: "Message", classes: "Tweet-Message",},
 
     ],
-    
-    
-    
+    //Handlers
+    handlers: {
+        ontap: "OnTap",
+    },
+
+   
     //Published properties
     published: {
         picture: "",
         handle: "",
         UserName: "",
-        text: "",
+        Message: "",
   },
   
    create: function() {
@@ -30,32 +33,37 @@ enyo.kind({
         this.pictureChanged();
         this.handleChanged();
         this.UserNameChanged()
-        this.textChanged();
+        this.MessageChanged();
   },
    
-   pictureChanged: function() {
+    pictureChanged: function() {
         this.$.picture.setAttribute("src", this.icon);
   },
 
-  handleChanged: function() {
+     handleChanged: function() {
         //Checks if the Handle and User's Name are the same, it doesn't make  sense to show the same thing twice
-        if (this.handle !== this.UserName) {
+        if (this.handle !== this.UserName && this.handle !== "") {
             this.$.handle.setContent(" @" + this.handle + "\n");
         } else if (this.handle === this.UserName) {
-            this.$.handle.setContent("");
+            this.$.handle.setContent(" ");
         }
   },
 
-  textChanged: function() {
-        this.$.text.setContent(this.text);
+    MessageChanged: function() {
+        this.$.Message.setContent(this.Message);
   },
-  UserNameChanged: function() {
+    UserNameChanged: function() {
         if (this.UserName !== this.handle) {
             this.$.UserName.setContent(this.UserName + ":");
         } else if (this.UserName === this.handle) {
             this.$.UserName.setContent("@" + this.UserName + ":");
         }
-}
-  
-  
+},
+    OnTap: function(inSender, inEvent) {
+        console.log(inSender);
+        
+        console.log(inEvent);
+        
+    },
+    
 });

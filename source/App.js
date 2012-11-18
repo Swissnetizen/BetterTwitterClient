@@ -15,17 +15,20 @@ enyo.kind({
         //The 1st Panel that will contain a scoller to show the tweets, the toolbar will contain the view picker.
         {name: "Panel1", layoutKind: "FittableRowsLayout", classes: "Panel1 onyx", components: [ 
             {kind:"onyx.MoreToolbar",  components: [ 
-                //The search box
-                {kind: "onyx.InputDecorator", components: [
-                    //Input
-                    {kind: "onyx.Input", name: "SearchTerm", placeholder: "Search", onkeydown: "searchOnEnter",},
-                        //The image that makes the search box more pleasing.
-                        {tag: "Image", src: "assets/search-input-search.png", ontap: "Search",},
-                //End of SearchTerm
+              
                 ],},
                 //End of more toolbar
-                ],},
-                {kind: "enyo.Scroller",name: "TweetList", fit: true,}
+               
+                  //The search box
+            {kind: "onyx.InputDecorator", classes:"SearchTerm", components: [
+                //Input
+                {kind: "onyx.Input", name: "SearchTerm", placeholder: "Search", onkeydown: "searchOnEnter",},
+                    //The image that makes the search box more pleasing.
+                {tag: "Image", src: "assets/search-input-search.png", ontap: "Search",},
+                //End of SearchTerm
+            ],},
+        {kind: "enyo.Scroller",name: "TweetList", fit: true, touchOverscroll: false}
+        
         //End of first Panel        
         ],},
         
@@ -37,10 +40,10 @@ enyo.kind({
             //More toolbar.
            
         {kind:"onyx.MoreToolbar", components: [ 
-                {kind: "onyx.Grabber", ontap: "SwitchPanel",}, {content: "Panel2"}
+                {kind: "onyx.Grabber", ontap: "SwitchPanel",}, {content: "Tweet"}
                 //End of More Toolbar
                 ],  },
-            {kind: "Sam.BigTweet", UserName: "Samarth AGARWAL"}
+
                //End of Panel2
                 ],  },
  
