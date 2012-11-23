@@ -25,7 +25,7 @@ enyo.kind({
       //The container.
      
           //Picture of the person who posted the tweet
-          {tag: "img", name: "picture", classes: "Tweet-Image",},
+          {tag: "img", name: "Picture", classes: "Tweet-Image",},
           //Name of the person who posted the tweet
           { tag: "b", name: "UserName"}, {name: "handle", classes: "Tweet-Handle", tag: "div",},
           //The tweet itself
@@ -40,7 +40,7 @@ enyo.kind({
    
     //Published properties
     published: {
-        picture: "",
+        Picture: "",
         handle: "",
         UserName: "",
         Message: "",
@@ -48,14 +48,14 @@ enyo.kind({
   
    create: function() {
         this.inherited(arguments);
-        this.pictureChanged();
+        this.PictureChanged();
         this.handleChanged();
-        this.UserNameChanged()
+        this.UserNameChanged();
         this.MessageChanged();
   },
    
-    pictureChanged: function() {
-        this.$.picture.setAttribute("src", this.icon);
+    PictureChanged: function() {
+        this.$.Picture.setAttribute("src", this.Picture);
   },
 
      handleChanged: function() {
@@ -77,6 +77,8 @@ enyo.kind({
             this.$.UserName.setContent("@" + this.UserName + ":");
         }
 },
+
+    
     OnTap: function(inSender, inEvent) {
         console.log(inSender);
         

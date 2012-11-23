@@ -19,11 +19,15 @@
 //BigTweet Kind that wil display more information
 
 enyo.kind({
-    kind: "Sam.Tweet",
+    kind: "enyo.Control",
     name: "Sam.BigTweet",
     
+    components: [
+        {kind: "Sam.Tweet", picture: "icon.png", Message: "Hello"},
+        {kind: "GTS.DividerDrawer", caption: "Images",}
+    ],
 
-
+    
 
 
 

@@ -2,3 +2,4 @@
 {"contributors":[],"silentsave":false,"ts":1349607393874,"patch":[[{"diffs":[[0,"ipt>\n\t\t\t"],[1,"app = "],[0,"new App("]],"start1":650,"start2":650,"length1":16,"length2":22}]],"length":730,"saved":false}
 {"contributors":[],"silentsave":false,"ts":1350665423605,"patch":[[{"diffs":[[0,"tle>"],[-1,"Enyo Bootplate App"],[1,"A better twitter client."],[0,"</ti"]],"start1":101,"start2":101,"length1":26,"length2":32}]],"length":736,"saved":false}
 {"ts":1352716155976,"patch":[[{"diffs":[[0,"\"yes\"/>\n"],[-1,"<!--"],[0,"\t\t<meta "]],"start1":327,"start2":327,"length1":20,"length2":16},{"diffs":[[0,"le=no\"/>"],[-1," -->"],[0,"\n\t\t<!-- "]],"start1":437,"start2":437,"length1":20,"length2":16}]],"length":736,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1353344694826,"patch":[[{"diffs":[[0,"<title>A"],[1," (much)"],[0," better "]],"start1":98,"start2":98,"length1":16,"length2":23}]],"length":743,"saved":false}
