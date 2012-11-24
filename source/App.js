@@ -31,6 +31,11 @@ enyo.kind({
     
     //Components
     components: [ 
+        //Twitter web services
+        {kind: "enyo.WebService", jsonp: true, onResponse: "ShowSearchResults", url: "https://search.twitter.com/search.json", name: "SearchWebService"},
+        
+        
+        
         //The 1st Panel that will contain a scoller to show the tweets, the toolbar will contain the view picker.
         {name: "Panel1", layoutKind: "FittableRowsLayout", classes: "Panel1 onyx", components: [ 
             {kind:"onyx.MoreToolbar",  components: [ 
@@ -106,17 +111,20 @@ enyo.kind({
   Search: function(inSender, inEvent) {
         //Gets the query
         var Query = this.$.SearchTerm.hasNode().value;
-        //Creates a new service; perhaps I should use enyo.webservice instead.
+    /*    //Creates a new service; perhaps I should use enyo.webservice instead.
         var service = new enyo.JsonpRequest({url: "https://search.twitter.com/search.json", callback: "callback"});
         service.response(enyo.bind(this, "ShowSearchResults"));
         service.go({q: Query});
+    */
+    this.$.SearchWebService.send({q: Query});
+    
     },
     //Shows the search results on screen; code copied form enyo tutorial todo: Rewrite code.
     ShowSearchResults: function(inRequest, inResponse) {
         //Checking if there is any data in "inResponse"
         console.log(inResponse);
-        if (inResponse) {
-            this.Data = inResponse.results;
+        if (inResponse.data) {
+            this.Data = inResponse.data.results;
             this.$.TweetList.setCount(this.Data.length);
             this.$.TweetList.reset();
 
