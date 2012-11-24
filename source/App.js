@@ -46,7 +46,7 @@ enyo.kind({
                 {tag: "Image", src: "assets/search-input-search.png", ontap: "Search",},
                 //End of SearchTerm
             ],},
-        {kind: "enyo.List", count: 0, onSetupItem: "TweetSetup", name: "TweetList", fit: true, touchOverscroll: false, components:[{kind: "Sam.Tweet", name: "Tweet"}] }
+        {kind: "enyo.List", count: 0, onSetupItem: "TweetSetup", name: "TweetList", fit: true, touchOverscroll: false, components:[{kind: "Sam.Tweet", name: "Tweet2"}] }
         
         //End of first Panel        
         ],},
@@ -99,7 +99,7 @@ enyo.kind({
 */
     TweetSetup: function(inSender, inEvent) {
         var Data = this.Data[inEvent.index];
-        var Component = this.$.Tweet;
+        var Component = this.$.Tweet2;
         Component.setPicture(Data.profile_image_url_https);
         Component.setUserName(Data.from_user_name);
         Component.setHandle(Data.from_user);

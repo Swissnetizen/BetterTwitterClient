@@ -33,7 +33,7 @@ enyo.kind({
 
     ],
     //Handlers
-    handlers: {
+    Handlers: {
         ontap: "OnTap",
     },
 
@@ -60,9 +60,9 @@ enyo.kind({
 
      HandleChanged: function() {
         //Checks if the Handle and User's Name are the same, it doesn't make  sense to show the same thing twice
-        if (this.handle !== this.UserName && this.Handle !== "") {
-            this.$.handle.setContent(" @" + this.handle + "\n");
-        } else if (this.handle === this.UserName) {
+        if (this.Handle !== this.UserName && this.Handle !== "") {
+            this.$.Handle.setContent(" @" + this.Handle + "\n");
+        } else if (this.Handle === this.UserName) {
             this.$.Handle.setContent(" ");
         }
   },
@@ -71,9 +71,9 @@ enyo.kind({
         this.$.Message.setContent(this.Message);
   },
     UserNameChanged: function() {
-        if (this.UserName !== this.handle) {
+        if (this.UserName !== this.Handle) {
             this.$.UserName.setContent(this.UserName + ":");
-        } else if (this.UserName === this.handle) {
+        } else if (this.UserName === this.Handle) {
             this.$.UserName.setContent("@" + this.UserName + ":");
         }
 },
