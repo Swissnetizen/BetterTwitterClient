@@ -69,7 +69,7 @@ enyo.kind({
                //End of Panel2
                 ],  },
  
- ],
+    ],
  
     
     
@@ -84,19 +84,6 @@ enyo.kind({
         }
     },
     
-/*
- //Prepeares a tweet and adds it to tweetlist  
- addTweet: function(inResult) {
-    this.createComponent({
-      kind: "Sam.Tweet",
-      container: this.$.TweetList,
-      Picture: inResult.profile_image_url_https,
-      UserName: inResult.from_user_name,
-      handle: inResult.from_user,
-      Message: inResult.text,
-    });
- },
-*/
     TweetSetup: function(inSender, inEvent) {
         var Data = this.Data[inEvent.index];
         var Component = this.$.Tweet2;
@@ -117,13 +104,13 @@ enyo.kind({
   },
   //Function that retrives data from twitter
   Search: function(inSender, inEvent) {
-      //Gets the query
-      var Query = this.$.SearchTerm.hasNode().value;
-      //Creates a new service; perhaps I should use enyo.webservice instead.
-      var service = new enyo.JsonpRequest({url: "https://search.twitter.com/search.json", callback: "callback"});
-    service.response(enyo.bind(this, "ShowSearchResults"));
-    service.go({q: Query});
-},
+        //Gets the query
+        var Query = this.$.SearchTerm.hasNode().value;
+        //Creates a new service; perhaps I should use enyo.webservice instead.
+        var service = new enyo.JsonpRequest({url: "https://search.twitter.com/search.json", callback: "callback"});
+        service.response(enyo.bind(this, "ShowSearchResults"));
+        service.go({q: Query});
+    },
     //Shows the search results on screen; code copied form enyo tutorial todo: Rewrite code.
     ShowSearchResults: function(inRequest, inResponse) {
         //Checking if there is any data in "inResponse"
@@ -132,7 +119,7 @@ enyo.kind({
             this.Data = inResponse.results;
             this.$.TweetList.setCount(this.Data.length);
             this.$.TweetList.reset();
-            //this.$.TweetList.render();
+
         } else {
             // If there is no data in inResponse then return
             return;
