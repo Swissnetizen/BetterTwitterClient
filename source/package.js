@@ -20,8 +20,9 @@ enyo.depends(
 	"$lib/layout",
 	"$lib/onyx",
     "$lib/gts-plugins",
+    "App.css",
     "tweet.js",
     "BigTweet.js",
-	"App.css",
+    "SearchPanel.js",
 	"App.js"
 );

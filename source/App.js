@@ -23,7 +23,7 @@ enyo.kind({
     kind:"Panels",
     classes:"app-panels onyx",
     arrangerKind: "CollapsingArranger",
-    Data: [],
+
 	
     
     
@@ -31,8 +31,8 @@ enyo.kind({
     
     //Components
     components: [ 
-        //Twitter web services
-        {kind: "enyo.WebService", jsonp: true, onResponse: "ShowSearchResults", url: "https://search.twitter.com/search.json", name: "SearchWebService"},
+
+       
         
         
         
@@ -42,17 +42,8 @@ enyo.kind({
                 {kind:"onyx.Menu", content: "Hello"}
                 ],},
                 //End of more toolbar
-               
-                  //The search box
-            {kind: "onyx.InputDecorator", classes:"SearchTerm", components: [
-                //Input
-                {kind: "onyx.Input", name: "SearchTerm", placeholder: "Search", onkeydown: "searchOnEnter",},
-                    //The image that makes the search box more pleasing.
-                {tag: "Image", src: "assets/search-input-search.png", ontap: "Search",},
-                //End of SearchTerm
-            ],},
-        {kind: "enyo.List", count: 0, onSetupItem: "TweetSetup", name: "TweetList", fit: true, touchOverscroll: false, components:[{kind: "Sam.Tweet", name: "Tweet2"}] }
-        
+              {kind: "Sam.SearchPanel", fit: true}
+
         //End of first Panel        
         ],},
         
@@ -81,53 +72,8 @@ enyo.kind({
     //Function to Switch the current pannel to the previous one.
     SwitchPanel: function() {
         //Makes sure we are not at index 0, wouldn't want to cause an exeption
-        if (this.index === 0) {
-            return false;
-        } else {
-            this.setIndex(this.index-1);
-            return true;
-        }
+    this.setIndex(this.getIndex() === 0 ? 0 : this.getIndex()-1);
     },
     
-    TweetSetup: function(inSender, inEvent) {
-        var Data = this.Data[inEvent.index];
-        var Component = this.$.Tweet2;
-        Component.setPicture(Data.profile_image_url_https);
-        Component.setUserName(Data.from_user_name);
-        Component.setHandle(Data.from_user);
-        Component.setMessage(Data.text);
-        
-    },
-    
-    //Function to allow users to use the enter key to search
-    searchOnEnter: function(inSender, inEvent) {
-        //Apearntly the enter key keycode is 13
-        if (inEvent.keyCode === 13) {
-        this.Search();
-        return true;
-        }
-  },
-  //Function that retrives data from twitter
-  Search: function(inSender, inEvent) {
-        //Sends the request
-        this.$.SearchWebService.send({q: this.$.SearchTerm.hasNode().value;});
-    
-    },
-    //Shows the search results on screen; code copied form enyo tutorial todo: Rewrite code.
-    ShowSearchResults: function(inRequest, inResponse) {
-        //Checking if there is any data in "inResponse"
-        console.log(inResponse);
-        if (inResponse.data) {
-            this.Data = inResponse.data.results;
-            this.$.TweetList.setCount(this.Data.length);
-            this.$.TweetList.reset();
-
-        } else {
-            // If there is no data in inResponse then return
-            return;
-            }
-    },    
-    
-            
 
 });

@@ -19,7 +19,7 @@
 //BigTweet Kind that wil display more information
 
 enyo.kind({
-    kind: "enyo.Component",
+    kind: "enyo.Control",
     name: "Sam.BigTweet",
     
     components: [
