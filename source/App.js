@@ -109,14 +109,8 @@ enyo.kind({
   },
   //Function that retrives data from twitter
   Search: function(inSender, inEvent) {
-        //Gets the query
-        var Query = this.$.SearchTerm.hasNode().value;
-    /*    //Creates a new service; perhaps I should use enyo.webservice instead.
-        var service = new enyo.JsonpRequest({url: "https://search.twitter.com/search.json", callback: "callback"});
-        service.response(enyo.bind(this, "ShowSearchResults"));
-        service.go({q: Query});
-    */
-    this.$.SearchWebService.send({q: Query});
+        //Sends the request
+        this.$.SearchWebService.send({q: this.$.SearchTerm.hasNode().value;});
     
     },
     //Shows the search results on screen; code copied form enyo tutorial todo: Rewrite code.
