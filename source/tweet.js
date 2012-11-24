@@ -27,7 +27,7 @@ enyo.kind({
           //Picture of the person who posted the tweet
           {tag: "img", name: "Picture", classes: "Tweet-Image",},
           //Name of the person who posted the tweet
-          { tag: "b", name: "UserName"}, {name: "handle", classes: "Tweet-Handle", tag: "div",},
+          { tag: "b", name: "UserName"}, {name: "Handle", classes: "Tweet-Handle", tag: "div",},
           //The tweet itself
           {name: "Message", classes: "Tweet-Message",},
 
@@ -41,7 +41,7 @@ enyo.kind({
     //Published properties
     published: {
         Picture: "",
-        handle: "",
+        Handle: "",
         UserName: "",
         Message: "",
   },
@@ -49,7 +49,7 @@ enyo.kind({
    create: function() {
         this.inherited(arguments);
         this.PictureChanged();
-        this.handleChanged();
+        this.HandleChanged();
         this.UserNameChanged();
         this.MessageChanged();
   },
@@ -58,12 +58,12 @@ enyo.kind({
         this.$.Picture.setAttribute("src", this.Picture);
   },
 
-     handleChanged: function() {
+     HandleChanged: function() {
         //Checks if the Handle and User's Name are the same, it doesn't make  sense to show the same thing twice
-        if (this.handle !== this.UserName && this.handle !== "") {
+        if (this.handle !== this.UserName && this.Handle !== "") {
             this.$.handle.setContent(" @" + this.handle + "\n");
         } else if (this.handle === this.UserName) {
-            this.$.handle.setContent(" ");
+            this.$.Handle.setContent(" ");
         }
   },
 
