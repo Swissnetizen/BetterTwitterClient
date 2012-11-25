@@ -23,6 +23,7 @@ enyo.depends(
     "App.css",
     "tweet.js",
     "BigTweet.js",
+    "TweetPanel.js",
     "SearchPanel.js",
 	"App.js"
 );

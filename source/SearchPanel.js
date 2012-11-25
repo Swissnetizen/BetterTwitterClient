@@ -1,3 +1,4 @@
+
 enyo.kind({
     name: "Sam.SearchPanel",
     kind: "enyo.Control",
@@ -23,8 +24,10 @@ enyo.kind({
             {tag: "Image", src: "assets/search-input-search.png", ontap: "Search",},
                 //End of SearchTerm
         ],},
-        // The scroller
-        {kind: "enyo.List", count: 0, onSetupItem: "TweetSetup", name: "SearchPanelTweetList", fit: true, touchOverscroll: false, components:[{kind: "Sam.Tweet", name: "Tweet2", onTap: "SendTweetTap"}] }
+        // The List
+        {kind: "enyo.List", count: 0, onSetupItem: "TweetSetup", name: "SearchPanelTweetList", fit: true, touchOverscroll: false, components:[
+            {kind: "Sam.Tweet", name: "Tweet2", ontap: "SendTweetTap"}
+        ], }
         
     ],        
 
@@ -71,9 +74,11 @@ enyo.kind({
             }
     },    
     
-   SendTweetTap: function(inEvent) {
+   SendTweetTap: function(inSender, inEvent) {
        //Sends the TweetTap event for the main app to deal with!
-       this.doTweetTap(inEvent);
+        var Index = inEvent.index;
+        inEvent.Data = this.Data[Index];
+        this.doTweetTap(inEvent);
    },         
 
 

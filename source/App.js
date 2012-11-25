@@ -42,7 +42,7 @@ enyo.kind({
                 {kind:"onyx.Menu", content: "Hello"}
                 ],},
                 //End of more toolbar
-              {kind: "Sam.SearchPanel", fit: true}
+              {kind: "Sam.SearchPanel", fit: true, onTweetTap: "TweetTaped",}
 
         //End of first Panel        
         ],},
@@ -58,15 +58,14 @@ enyo.kind({
                 {kind: "onyx.Grabber", ontap: "SwitchPanel",}, {content: "Tweet"}
                 //End of More Toolbar
             ],  },
-            //BigTweet
-            {kind: "Sam.BigTweet"}
+            {kind: "Sam.TweetPanel", name: "TweetPanel"},
+            
             
             
                //End of Panel2
                 ],  },
  
     ],
- 
     
     
     //Function to Switch the current pannel to the previous one.
@@ -75,5 +74,8 @@ enyo.kind({
     this.setIndex(this.getIndex() === 0 ? 0 : this.getIndex()-1);
     },
     
+    TweetTaped: function(inSender, inEvent) {
+        this.$.TweetPanel.Data = inEvent.Data;   
+    }
 
 });

@@ -23,11 +23,43 @@ enyo.kind({
     name: "Sam.BigTweet",
     
     components: [
-        {kind: "Sam.Tweet", picture: "icon.png", Message: "Hello"},
+        {kind: "Sam.Tweet", name: "MainComponent"},
         {kind: "GTS.DividerDrawer", caption: "Images",}
     ],
 
-    
+    published: {
+        Picture: "",
+        Handle: "",
+        UserName: "",
+        Message: "",
+    },
+  
+    create: function() {
+        this.inherited(arguments);
+        this.PictureChanged();
+        this.HandleChanged();
+        this.UserNameChanged();
+        this.MessageChanged();
+    },
+   
+    PictureChanged: function() {
+        this.$.MainComponent.setPicture(this.Picture);
+    },
+
+    HandleChanged: function() {
+        this.$.MainComponent.setHandle(this.Handle);
+      
+        
+    },
+
+    MessageChanged: function() {
+        this.$.MainComponent.setMessage(this.Message);
+    },
+    UserNameChanged: function() {
+        this.$.MainComponent.setUserName(this.UserName + ":");
+     
+    },
+
 
 
 
