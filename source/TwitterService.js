@@ -12,15 +12,15 @@
 //   See the License for the specific language governing permissions and
 //   limitations under the License.
 
+//Component to provide acces to twiter web services(replacement to standalone twitter services)
+enyo.kind({
+    name: "Sam.TwitterService",
+    kind: "enyo.Component",
+    components: [
+        
+        
+        
+        
+        ]
 
-enyo.depends(
-	"$lib/layout",
-	"$lib/onyx",
-    "$lib/gts-plugins",
-    "App.css",
-    "tweet.js",
-    "BigTweet.js",
-    "TweetPanel.js",
-    "SearchPanel.js",
-	"App.js"
-);
+});
