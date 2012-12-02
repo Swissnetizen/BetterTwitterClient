@@ -1,3 +1,3 @@
-Check LICENSE.md for the legal license.
+Check LICENCE.md for the legal license.
 
 
