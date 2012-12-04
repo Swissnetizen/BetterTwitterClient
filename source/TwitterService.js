@@ -16,11 +16,26 @@
 enyo.kind({
     name: "Sam.TwitterService",
     kind: "enyo.Component",
+    //Components, not shown on screen.
     components: [
+        {kind: "enyo.WebService", jsonp: true, onResponse: "ShowSearchResults", url: "https://search.twitter.com/search.json", name: "SearchWebService"},
+    ],
+    
+    events: {
+        
+    },
+    
+    //Initiates a search request
+    StartSearchRequest(Query) {
+        var request = new enyo.JsonpRequest({
+            url: "http://search.twitter.com/search.json",
+        });
         
         
-        
-        
-        ]
+        request.response(function(inSender, inEvent) {
+            
+        });
+        request.go({ q: Query });
+    }
 
 });

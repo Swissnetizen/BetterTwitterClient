@@ -14,13 +14,18 @@
 
 
 enyo.depends(
-	"$lib/layout",
+	//Libraries
+    "$lib/layout",
 	"$lib/onyx",
     "$lib/gts-plugins",
+    //CSSs
     "App.css",
+    //Reusable kinds(somewhat)
     "tweet.js",
     "BigTweet.js",
+    //App specific kinds
     "TweetPanel.js",
+    "TweetService.js",
     "SearchPanel.js",
 	"App.js"
 );

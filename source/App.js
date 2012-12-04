@@ -68,7 +68,7 @@ enyo.kind({
     //Function to Switch the current pannel to the previous one.
     SwitchPanel: function() {
         //Makes sure we are not at index 0, wouldn't want to cause an exeption
-    this.setIndex(this.getIndex() === 0 ? 0 : this.getIndex()-1);
+        this.setIndex(this.getIndex() === 0 ? 0 : this.getIndex()-1);
     },
     
     TweetTaped: function(inSender, inEvent) {
