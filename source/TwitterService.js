@@ -12,30 +12,44 @@
 //   See the License for the specific language governing permissions and
 //   limitations under the License.
 
-//Component to provide acces to twiter web services(replacement to standalone twitter services)
+//Component to provide access to twiter web services(replacement to standalone twitter services)
 enyo.kind({
+    //Information for this kind.
     name: "Sam.TwitterService",
     kind: "enyo.Component",
-    //Components, not shown on screen.
-    components: [
-        {kind: "enyo.WebService", jsonp: true, onResponse: "ShowSearchResults", url: "https://search.twitter.com/search.json", name: "SearchWebService"},
-    ],
-    
-    events: {
+    //Global varibles.
+    IdentifersNum: 0,
+
+    GetNewRequestTicket: function() {
+//         Doesn't use a random number 
+//         because then I would need to do collision protection, random takes time and this is simple.
         
+        //Adds 1 to the request ticket number. 
+        this.IdentifersNum += 1;
+        //Concats and returns the new ticket
+        return "onTweetsRecived".concat(IdentifersNum);
     },
     
-    //Initiates a search request
-    StartSearchRequest(Query) {
-        var request = new enyo.JsonpRequest({
-            url: "http://search.twitter.com/search.json",
-        });
+    
+    
+
+    StartSearchRequest: function(Query) {
+//        Method for requesting search requests from twitter
         
-        
-        request.response(function(inSender, inEvent) {
-            
+        //Creates the request object.
+        var Request = new enyo.JsonpRequest({
+            url: "https://search.twitter.com/search.json",
         });
-        request.go({ q: Query });
+        //Prepares the Request Ticket, like the ticket with the number you get at a support centre to wait for.
+        var RequestTicket = GetNewRequestTicket()
+        //Sets the onResponse fuction
+        Request.response(function(inSender, inEvent) {
+            enyo.Signals.send(RequestTicket, inEvent);
+        });
+        //Starts the request.
+        Request.go({ q: Query });
+        //Returns the requestTicket
+        return RequestTicket;
     }
 
 });

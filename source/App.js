@@ -14,39 +14,26 @@
 
 
 enyo.kind({
-    //Kind name and couple of options
+    //Kind name and couple of options.
 	name: "App",
 	fit: true,
     kind:"Panels",
     classes:"app-panels onyx",
     arrangerKind: "CollapsingArranger",
-
-	
-    
-    
-    
-    
     //Components
     components: [ 
-
-       
-        
-        
-        
+        {kind: "Sam.TwitterService", name: "Service"},
         //The 1st Panel that will contain a scoller to show the tweets, the toolbar will contain the view picker.
         {name: "Panel1", layoutKind: "FittableRowsLayout", classes: "Panel1 onyx", components: [ 
-            {kind:"onyx.MoreToolbar",  components: [ 
-                {kind:"onyx.Menu", content: "Hello"}
-                ],},
-                //End of more toolbar
-              {kind: "Sam.SearchPanel", fit: true, onTweetTap: "TweetTaped",}
+                {kind:"onyx.MoreToolbar",  components: [ 
+                    {kind:"onyx.Menu", content: "Hello"}
+                    ],},
+                    //End of more toolbar
+                  {kind: "Sam.SearchPanel", fit: true, onTweetTap: "TweetTapped", name: "dfhgfght"}
 
         //End of first Panel        
-        ],},
-        
-        
-        
-        
+            ],
+        },
         //The second Panel will show the tweet, images and comments. 
         {name: "Tweet", classes: "onyx", components: [ 
             //More toolbar.
@@ -56,22 +43,18 @@ enyo.kind({
                 //End of More Toolbar
             ],  },
             {kind: "Sam.TweetPanel", name: "TweetPanel"},
-            
-            
-            
-               //End of Panel2
-                ],  },
- 
+            //End of Panel2
+            ],  
+        },
     ],
-    
     
     //Function to Switch the current pannel to the previous one.
     SwitchPanel: function() {
         //Makes sure we are not at index 0, wouldn't want to cause an exeption
         this.setIndex(this.getIndex() === 0 ? 0 : this.getIndex()-1);
     },
-    
-    TweetTaped: function(inSender, inEvent) {
+    //Called when a tweet is tapped on any of the panels
+    TweetTapped: function(inSender, inEvent) {
         this.$.TweetPanel.Data = inEvent.Data;
         this.$.TweetPanel.DataChanged();
     }

@@ -25,7 +25,7 @@ enyo.depends(
     "BigTweet.js",
     //App specific kinds
     "TweetPanel.js",
-    "TweetService.js",
+    "TwitterService.js",
     "SearchPanel.js",
 	"App.js"
 );
