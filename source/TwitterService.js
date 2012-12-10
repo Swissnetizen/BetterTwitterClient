@@ -20,20 +20,12 @@ enyo.kind({
     //Global varibles.
     IdentifersNum: 0,
 
-    GetNewRequestTicket: function() {
-//         Doesn't use a random number 
-//         because then I would need to do collision protection, random takes time and this is simple.
-        
-        //Adds 1 to the request ticket number. 
-        this.IdentifersNum += 1;
-        //Concats and returns the new ticket
-        return "onTweetsRecived".concat(IdentifersNum);
-    },
+ 
     
     
     
 
-    StartSearchRequest: function(Query) {
+    NewSearchRequest: function(Query, Callback) {
 //        Method for requesting search requests from twitter
         
         //Creates the request object.
@@ -41,11 +33,10 @@ enyo.kind({
             url: "https://search.twitter.com/search.json",
         });
         //Prepares the Request Ticket, like the ticket with the number you get at a support centre to wait for.
-        var RequestTicket = GetNewRequestTicket()
+        var RequestTicket = 1;
         //Sets the onResponse fuction
-        Request.response(function(inSender, inEvent) {
-            enyo.Signals.send(RequestTicket, inEvent);
-        });
+
+        Request.response(Callback);
         //Starts the request.
         Request.go({ q: Query });
         //Returns the requestTicket
