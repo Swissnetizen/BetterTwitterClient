@@ -19,4 +19,47 @@ enyo.kind({
     name: "Sam.TweetList",
     kind: "enyo.Control",
     
+    components: [
+        {kind: "enyo.List", count: 0, onSetupItem: "TweetSetup", name: "SearchPanelTweetList", fit: true, touchOverscroll: false, components:[
+                {kind: "Sam.Tweet", name: "Tweet2", ontap: "SendTweetTap"}
+            ], 
+        }
+    ],
     
+    
+    
+    events: {
+        onTweetTap:""
+    },
+    
+    published: {
+        Tweets:[]
+    }
+    TweetSetup: function(inSender, inEvent) {
+        var Data = this.Tweets[inEvent.index];
+        var Component = this.$.Tweet2;
+        Component.setPicture(Data.profile_image_url_https);
+        Component.setUserName(Data.from_user_name);
+        Component.setHandle(Data.from_user);
+        Component.setMessage(Data.text);
+        
+    },
+    
+
+  //Function that retrives data from twitter
+
+    //Shows the search results on screen; code based on enyo tutorial code, code rewiten
+    onTweetsChanged: function() {
+        //Checking if there is any data in "inResponse"
+
+        this.$.SearchPanelTweetList.setCount(this.Tweets.length);
+        this.$.SearchPanelTweetList.reset();
+
+    },    
+    
+   SendTweetTap: function(inSender, inEvent) {
+       //Sends the TweetTap event for the main app to deal with!
+        var Index = inEvent.index;
+        inEvent.Data = this.Data[Index];
+        this.doTweetTap(inEvent);
+   },

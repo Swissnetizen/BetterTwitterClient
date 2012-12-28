@@ -447,3 +447,30 @@
 {"ts":1355086696708,"patch":[[{"diffs":[[0,"obal var"],[-1,"i"],[1,"y"],[0,"bles.\n  "]],"start1":823,"start2":823,"length1":17,"length2":17}]],"length":1985,"saved":false}
 {"ts":1355086699718,"patch":[[{"diffs":[[0,"obal var"],[-1,"y"],[0,"bles.\n  "]],"start1":823,"start2":823,"length1":17,"length2":16}]],"length":1984,"saved":false}
 {"ts":1355086701230,"patch":[[{"diffs":[[0,"obal var"],[1,"i"],[0,"bles.\n  "]],"start1":823,"start2":823,"length1":16,"length2":17}]],"length":1985,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1355163774160,"patch":[[{"diffs":[[0,"on(Query"],[1,", callbac"],[0,") {\n//  "]],"start1":1286,"start2":1286,"length1":16,"length2":25}]],"length":1994,"saved":false}
+{"ts":1355163775132,"patch":[[{"diffs":[[0," callbac"],[1,"k"],[0,") {\n//  "]],"start1":1295,"start2":1295,"length1":16,"length2":17}]],"length":1995,"saved":false}
+{"ts":1355163781194,"patch":[[{"diffs":[[0,"    "],[-1,"    enyo.Signals.send(RequestTicket, inEvent);"],[0,"\n   "]],"start1":1792,"start2":1792,"length1":54,"length2":8}]],"length":1949,"saved":false}
+{"ts":1355163782348,"patch":[[{"diffs":[[0,"vent) {\n        "],[1,"    "],[0,"\n        });\n   "]],"start1":1780,"start2":1780,"length1":32,"length2":36}]],"length":1953,"saved":false}
+{"ts":1355163784404,"patch":[[{"diffs":[[0,") {\n            "],[1,"this."],[0,"\n        });\n   "]],"start1":1784,"start2":1784,"length1":32,"length2":37}]],"length":1958,"saved":false}
+{"ts":1355163792850,"patch":[[{"diffs":[[0,"   this."],[1,"Do"],[0,"\n       "]],"start1":1797,"start2":1797,"length1":16,"length2":18}]],"length":1960,"saved":false}
+{"ts":1355163795552,"patch":[[{"diffs":[[0,"  this.D"],[-1,"o"],[1,"ex"],[0,"\n       "]],"start1":1798,"start2":1798,"length1":17,"length2":18}]],"length":1961,"saved":false}
+{"ts":1355163796317,"patch":[[{"diffs":[[0,"this.Dex"],[1,"."],[0,"\n       "]],"start1":1800,"start2":1800,"length1":16,"length2":17}]],"length":1962,"saved":false}
+{"ts":1355163797060,"patch":[[{"diffs":[[0,"this.Dex"],[-1,"."],[0,"\n       "]],"start1":1800,"start2":1800,"length1":17,"length2":16}]],"length":1961,"saved":false}
+{"ts":1355163801456,"patch":[[{"diffs":[[0,"this.Dex"],[1," += 1"],[0,"\n       "]],"start1":1800,"start2":1800,"length1":16,"length2":21}]],"length":1966,"saved":false}
+{"ts":1355163803559,"patch":[[{"diffs":[[0,"Dex += 1"],[1,";"],[0,"\n       "]],"start1":1805,"start2":1805,"length1":16,"length2":17}]],"length":1967,"saved":false}
+{"ts":1355164037773,"patch":[[{"diffs":[[0,"icket = "],[1,"this"],[0,"GetNewRe"]],"start1":1665,"start2":1665,"length1":16,"length2":20}]],"length":1971,"saved":false}
+{"ts":1355164038968,"patch":[[{"diffs":[[0,"t = this"],[1,"."],[0,"GetNewRe"]],"start1":1669,"start2":1669,"length1":16,"length2":17}]],"length":1972,"saved":false}
+{"ts":1355164185839,"patch":[[{"diffs":[[0,"t = "],[-1,"this.GetNewRequestTicket()"],[1,"1"],[0,"\n   "]],"start1":1669,"start2":1669,"length1":34,"length2":9}]],"length":1947,"saved":false}
+{"ts":1355164187625,"patch":[[{"diffs":[[0,"cket = 1"],[1,";"],[0,"\n       "]],"start1":1666,"start2":1666,"length1":16,"length2":17}]],"length":1948,"saved":false}
+{"ts":1355164396311,"patch":[[{"diffs":[[0,"fuction\n"],[1,"                    this.Dex += 1;\n"],[0,"        "]],"start1":1706,"start2":1706,"length1":16,"length2":51},{"diffs":[[0,"vent) {\n"],[1,"\n"],[0,"        "]],"start1":1796,"start2":1796,"length1":16,"length2":17}]],"length":1984,"saved":false}
+{"ts":1355164598061,"patch":[[{"diffs":[[0,"nse("],[-1,"function(inSender, inEvent) {\n\n            this.Dex += 1;\n        }"],[0,");\n "]],"start1":1770,"start2":1770,"length1":75,"length2":8}]],"length":1917,"saved":false}
+{"ts":1355164600228,"patch":[[{"diffs":[[0,"esponse("],[1,"callback"],[0,");\n     "]],"start1":1766,"start2":1766,"length1":16,"length2":24}]],"length":1925,"saved":false}
+{"ts":1355164605414,"patch":[[{"diffs":[[0,"ion\n"],[-1,"                    this.Dex += 1;"],[0,"\n   "]],"start1":1710,"start2":1710,"length1":42,"length2":8}]],"length":1891,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1355173962886,"patch":[[{"diffs":[[0,"(Query, "],[-1,"c"],[1,"C"],[0,"allback)"]],"start1":1288,"start2":1288,"length1":17,"length2":17}]],"length":1891,"saved":false}
+{"ts":1355173968323,"patch":[[{"diffs":[[0,"esponse("],[-1,"c"],[1,"C"],[0,"allback)"]],"start1":1732,"start2":1732,"length1":17,"length2":17}]],"length":1891,"saved":false}
+{"ts":1355173976370,"patch":[[{"diffs":[[0,"  \n\n    "],[-1,"Start"],[1,"N"],[0,"SearchRe"]],"start1":1252,"start2":1252,"length1":21,"length2":17}]],"length":1887,"saved":false}
+{"ts":1355173978436,"patch":[[{"diffs":[[0," \n\n    N"],[1,"ew"],[0,"SearchRe"]],"start1":1253,"start2":1253,"length1":16,"length2":18}]],"length":1889,"saved":false}
+{"ts":1355173984975,"patch":[[{"diffs":[[0,",\n\n "],[-1,"   GetNewRequestTicket: function() {\n//         Doesn't use a random number \n//         because then I would need to do collision protection, random takes time and this is simple.\n        \n        //Adds 1 to the request ticket number. \n        this.IdentifersNum += 1;\n        //Concats and returns the new ticket\n        return \"onTweetsRecived\".concat(IdentifersNum);\n    },"],[0,"\n   "]],"start1":858,"start2":858,"length1":385,"length2":8}]],"length":1512,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1355340962417,"patch":[[{"diffs":[[0,"    "],[-1,"New"],[0,"Sear"]],"start1":879,"start2":879,"length1":11,"length2":8}]],"length":1509,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1355476600883,"patch":[[{"diffs":[[0,"or.\n"],[-1,"        var RequestTicket = 1;"],[0,"\n   "]],"start1":1259,"start2":1259,"length1":38,"length2":8},{"diffs":[[0,"urn "],[-1,"RequestTicket"],[1,"true"],[0,";\n  "]],"start1":1450,"start2":1450,"length1":21,"length2":12}]],"length":1470,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1355578644016,"patch":[[{"diffs":[[0,"  Search"],[-1,"Request"],[0,": functi"]],"start1":881,"start2":881,"length1":23,"length2":16}]],"length":1463,"saved":false}

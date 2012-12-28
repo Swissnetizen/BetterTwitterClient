@@ -20,6 +20,7 @@ enyo.kind({
     kind:"Panels",
     classes:"app-panels onyx",
     arrangerKind: "CollapsingArranger",
+    Dex: 0,
     //Components
     components: [ 
         {kind: "Sam.TwitterService", name: "Service"},
@@ -47,16 +48,18 @@ enyo.kind({
             ],  
         },
     ],
+
     
     //Function to Switch the current pannel to the previous one.
     SwitchPanel: function() {
         //Makes sure we are not at index 0, wouldn't want to cause an exeption
         this.setIndex(this.getIndex() === 0 ? 0 : this.getIndex()-1);
+
     },
     //Called when a tweet is tapped on any of the panels
     TweetTapped: function(inSender, inEvent) {
         this.$.TweetPanel.Data = inEvent.Data;
         this.$.TweetPanel.DataChanged();
-    }
+    },
 
 });

@@ -25,7 +25,7 @@ enyo.kind({
     
     
 
-    NewSearchRequest: function(Query, Callback) {
+    Search: function(Query, Callback) {
 //        Method for requesting search requests from twitter
         
         //Creates the request object.
@@ -33,14 +33,14 @@ enyo.kind({
             url: "https://search.twitter.com/search.json",
         });
         //Prepares the Request Ticket, like the ticket with the number you get at a support centre to wait for.
-        var RequestTicket = 1;
+
         //Sets the onResponse fuction
 
         Request.response(Callback);
         //Starts the request.
         Request.go({ q: Query });
         //Returns the requestTicket
-        return RequestTicket;
+        return true;
     }
 
 });

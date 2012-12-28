@@ -32,7 +32,7 @@ enyo.kind({
         //The search box
         {kind: "onyx.InputDecorator", classes:"SearchTerm", components: [
                 //Input
-            {kind: "onyx.Input", name: "SearchTerm", placeholder: "Search", onkeydown: "searchOnEnter",},
+            {kind: "onyx.Input", name: "SearchTerm", placeholder: "Search", onkeydown: "SearchOnEnter",},
                 //The image that makes the search box more pleasing.
             {tag: "Image", src: "assets/search-input-search.png", ontap: "Search",},
                 //End of SearchTerm
@@ -43,56 +43,34 @@ enyo.kind({
         ], }
         
     ],        
-
-
-
-
-
-    TweetSetup: function(inSender, inEvent) {
-        var Data = this.Data[inEvent.index];
-        var Component = this.$.Tweet2;
-        Component.setPicture(Data.profile_image_url_https);
-        Component.setUserName(Data.from_user_name);
-        Component.setHandle(Data.from_user);
-        Component.setMessage(Data.text);
-        
-    },
     
-    //Function to allow users to use the enter key to search
-    searchOnEnter: function(inSender, inEvent) {
+    
+    
+    published:{
+      Service:"",  
+    },
+
+
+
+        //Function to allow users to use the enter key to search
+    SearchOnEnter: function(inSender, inEvent) {
         //Apearntly the enter key keycode is 13
         if (inEvent.keyCode === 13) {
         this.Search();
         return true;
         }
-  },
-  //Function that retrives data from twitter
-  Search: function(inSender, inEvent) {
-        //Sends the request
-        this.$.SearchWebService.send({q: this.$.SearchTerm.hasNode().value});
-    
     },
-    //Shows the search results on screen; code based on enyo tutorial code, code rewiten
-    ShowSearchResults: function(inRequest, inResponse) {
-        //Checking if there is any data in "inResponse"
-        console.log(inResponse);
-        if (inResponse.data) {
-            this.Data = inResponse.data.results;
-            this.$.SearchPanelTweetList.setCount(this.Data.length);
-            this.$.SearchPanelTweetList.reset();
-
-        } else {
-            // If there is no data in inResponse then return
-            return;
-            }
-    },    
     
-   SendTweetTap: function(inSender, inEvent) {
-       //Sends the TweetTap event for the main app to deal with!
-        var Index = inEvent.index;
-        inEvent.Data = this.Data[Index];
-        this.doTweetTap(inEvent);
-   },         
+    
+    
+    Search: function () {
+        this.Service.Search(this.$.SearchTerm.hasNode().value, function(inRequst, inResponse) {console.log(inResponse.results);});
+    }
+    
+    
+    
+  
+    
 
 
 });
