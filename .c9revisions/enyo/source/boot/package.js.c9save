@@ -1,0 +1,1 @@
+{"ts":1357127018908,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"enyo.depends(\n\t\"enyo.js\",\n\t\"../../loader.js\",\n\t\"boot.js\"\n);"]],"start1":0,"start2":0,"length1":0,"length2":59}]],"length":59}

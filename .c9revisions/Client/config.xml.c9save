@@ -1,0 +1,37 @@
+{"ts":1357157551451,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n    <widget xmlns = \"http://www.w3.org/ns/widgets\"\n        xmlns:gap = \"http://phonegap.com/ns/1.0\"\n        id = \"com.phonegap.example\"\n        versionCode=\"10\"\n        version = \"1.0.0\">\n    <!-- versionCode is optional and Android only -->\n    <name>PhoneGap Example</name>\n    <description>\n        An example for phonegap build docs.\n    </description>\n    <author href=\"https://build.phonegap.com\" email=\"support@phonegap.com\">\n\n    </author>\n</widget>\n"]],"start1":0,"start2":0,"length1":0,"length2":498}]],"length":498}
+{"contributors":[],"silentsave":true,"ts":1357157559510,"patch":[[{"diffs":[[0,"p.com\">\n"],[1,"    "],[0,"\n    </a"]],"start1":465,"start2":465,"length1":16,"length2":20}]],"length":502,"saved":false}
+{"ts":1357157560771,"patch":[[{"diffs":[[0,"m\">\n    "],[1,"    "],[0,"\n    </a"]],"start1":469,"start2":469,"length1":16,"length2":20}]],"length":506,"saved":false}
+{"ts":1357157563606,"patch":[[{"diffs":[[0,"        "],[1,"Samarth "],[0,"\n    </a"]],"start1":473,"start2":473,"length1":16,"length2":24}]],"length":514,"saved":false}
+{"ts":1357157564144,"patch":[[{"diffs":[[0,"Samarth "],[1,"AG"],[0,"\n    </a"]],"start1":481,"start2":481,"length1":16,"length2":18}]],"length":516,"saved":false}
+{"ts":1357157564626,"patch":[[{"diffs":[[0,"marth AG"],[1,"ARW"],[0,"\n    </a"]],"start1":483,"start2":483,"length1":16,"length2":19}]],"length":519,"saved":false}
+{"ts":1357157566052,"patch":[[{"diffs":[[0,"th AGARW"],[1,"AL"],[0,"\n    </a"]],"start1":486,"start2":486,"length1":16,"length2":18}]],"length":521,"saved":false}
+{"ts":1357157571343,"patch":[[{"diffs":[[0,"thor"],[-1," href=\"https://build.phonegap.com\""],[0," ema"]],"start1":404,"start2":404,"length1":42,"length2":8}]],"length":487,"saved":false}
+{"ts":1357157574701,"patch":[[{"diffs":[[0,"il=\""],[-1,"support@phonegap.com"],[0,"\">\n "]],"start1":412,"start2":412,"length1":28,"length2":8}]],"length":467,"saved":false}
+{"ts":1357157577787,"patch":[[{"diffs":[[0," email=\""],[1,"samu.agarw"],[0,"\">\n     "]],"start1":408,"start2":408,"length1":16,"length2":26}]],"length":477,"saved":false}
+{"ts":1357157579381,"patch":[[{"diffs":[[0,"mu.agarw"],[1,"al@"],[0,"\">\n     "]],"start1":418,"start2":418,"length1":16,"length2":19}]],"length":480,"saved":false}
+{"ts":1357157580196,"patch":[[{"diffs":[[0,"agarwal@"],[1,"gma"],[0,"\">\n     "]],"start1":421,"start2":421,"length1":16,"length2":19}]],"length":483,"saved":false}
+{"ts":1357157583922,"patch":[[{"diffs":[[0,"rwal@gma"],[1,"il.com"],[0,"\">\n     "]],"start1":424,"start2":424,"length1":16,"length2":22}]],"length":489,"saved":false}
+{"ts":1357157588806,"patch":[[{"diffs":[[0,"com."],[-1,"phonegap.example"],[0,"\"\n  "]],"start1":154,"start2":154,"length1":24,"length2":8}]],"length":473,"saved":false}
+{"ts":1357157634966,"patch":[[{"diffs":[[0," = \"com."],[1,"sami"],[0,"\"\n      "]],"start1":150,"start2":150,"length1":16,"length2":20}]],"length":477,"saved":false}
+{"ts":1357157637512,"patch":[[{"diffs":[[0,"\"com.sam"],[-1,"i"],[0,"\"\n      "]],"start1":153,"start2":153,"length1":17,"length2":16}]],"length":476,"saved":false}
+{"ts":1357157638486,"patch":[[{"diffs":[[0,"\"com.sam"],[1,"-"],[0,"\"\n      "]],"start1":153,"start2":153,"length1":16,"length2":17}]],"length":477,"saved":false}
+{"ts":1357157640436,"patch":[[{"diffs":[[0,"com.sam-"],[1,"ink."],[0,"\"\n      "]],"start1":154,"start2":154,"length1":16,"length2":20}]],"length":481,"saved":false}
+{"ts":1357157649770,"patch":[[{"diffs":[[0,"sam-ink."],[1,"Bet"],[0,"\"\n      "]],"start1":158,"start2":158,"length1":16,"length2":19}]],"length":484,"saved":false}
+{"ts":1357157651781,"patch":[[{"diffs":[[0,"-ink.Bet"],[1,"ter "],[0,"\"\n      "]],"start1":161,"start2":161,"length1":16,"length2":20}]],"length":488,"saved":false}
+{"ts":1357157657854,"patch":[[{"diffs":[[0,"k.Better"],[-1," "],[1,"TwitterClient"],[0,"\"\n      "]],"start1":164,"start2":164,"length1":17,"length2":29}]],"length":500,"saved":false}
+{"ts":1357157701204,"patch":[[{"diffs":[[0,"<author "],[1,"href"],[0,"email=\"s"]],"start1":412,"start2":412,"length1":16,"length2":20}]],"length":504,"saved":false}
+{"ts":1357157703533,"patch":[[{"diffs":[[0,"hor href"],[1,"=\""],[0,"email=\"s"]],"start1":416,"start2":416,"length1":16,"length2":18}]],"length":506,"saved":false}
+{"ts":1357157706869,"patch":[[{"diffs":[[0,"r href=\""],[1,"samink."],[0,"email=\"s"]],"start1":418,"start2":418,"length1":16,"length2":23}]],"length":513,"saved":false}
+{"ts":1357157707369,"patch":[[{"diffs":[[0,"\"samink."],[1,"tk"],[0,"email=\"s"]],"start1":425,"start2":425,"length1":16,"length2":18}]],"length":515,"saved":false}
+{"ts":1357157709310,"patch":[[{"diffs":[[0,"amink.tk"],[1,"\" "],[0,"email=\"s"]],"start1":427,"start2":427,"length1":16,"length2":18}]],"length":517,"saved":false}
+{"ts":1357157915342,"patch":[[{"diffs":[[0,"nly -->\n"],[1,"    \n    \n    \n"],[0,"    <nam"]],"start1":285,"start2":285,"length1":16,"length2":31}]],"length":532,"saved":false}
+{"ts":1357157918977,"patch":[[{"diffs":[[0,"nCode=\"1"],[-1,"0"],[0,"\"\n      "]],"start1":201,"start2":201,"length1":17,"length2":16},{"diffs":[[0,"n = \"1.0"],[-1,".0"],[0,"\">\n    <"]],"start1":225,"start2":225,"length1":18,"length2":16}]],"length":529,"saved":false}
+{"ts":1357157921776,"patch":[[{"diffs":[[0,"sion = \""],[-1,"1.0"],[0,"\">\n    <"]],"start1":222,"start2":222,"length1":19,"length2":16}]],"length":526,"saved":false}
+{"ts":1357157924742,"patch":[[{"diffs":[[0,"sion = \""],[1,".."],[0,"\">\n    <"]],"start1":222,"start2":222,"length1":16,"length2":18}]],"length":528,"saved":false}
+{"ts":1357157925965,"patch":[[{"diffs":[[0,"on = \".."],[1,"1"],[0,"\">\n    <"]],"start1":224,"start2":224,"length1":16,"length2":17}]],"length":529,"saved":false}
+{"ts":1357157932529,"patch":[[{"diffs":[[0," = \""],[-1,"..1"],[1,"1.0.0"],[0,"\">\n "]],"start1":226,"start2":226,"length1":11,"length2":13}]],"length":531,"saved":false}
+{"ts":1357157942422,"patch":[[{"diffs":[[0,"ame>"],[-1,"PhoneGap Example"],[0,"</na"]],"start1":313,"start2":313,"length1":24,"length2":8}]],"length":515,"saved":false}
+{"ts":1357157952107,"patch":[[{"diffs":[[0,"  <name>"],[1,"Better "],[0,"</name>\n"]],"start1":309,"start2":309,"length1":16,"length2":23}]],"length":522,"saved":false}
+{"ts":1357157956515,"patch":[[{"diffs":[[0,">Better "],[1,"Twitter Client"],[0,"</name>\n"]],"start1":316,"start2":316,"length1":16,"length2":30}]],"length":536,"saved":false}
+{"ts":1357157962827,"patch":[[{"diffs":[[0,"   A"],[-1,"n example for phonegap build docs."],[1," Twi"],[0,"\n   "]],"start1":369,"start2":369,"length1":42,"length2":12}]],"length":506,"saved":false}
+{"ts":1357157965195,"patch":[[{"diffs":[[0,"   A Twi"],[1,"tter Clie"],[0,"\n    </d"]],"start1":369,"start2":369,"length1":16,"length2":25}]],"length":515,"saved":false}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id = "com.samarth.app.BetterTwitterClient"
+        versionCode="1"
+        version = "1.0.0">
+    <!-- versionCode is optional and Android only -->
+    
+     <preference name = "EncryptionKey"
+              value = "ea31ad3a23fd2f"
+              readonly = "true" />
+    
+    <name>Better Twitter Client</name>
+    <description>
+        A Twitter client that is better than Twitter's own app.
+    </description>
+    <author href="samink.tk" email="samu.agarwal@gmail.com">
+        Samarth AGARWAL
+    </author>
+</widget>

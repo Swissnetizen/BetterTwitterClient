@@ -1,0 +1,21 @@
+{
+  "description": "An object that is sent to the server to make an jsonp request",
+  "type": "object",
+  "properties": {
+    "Type": {
+      "description": "The type of request such as: GET, POST, PUT and DELETE.",
+      "type": "string",
+      "required": true
+    },
+    "Path": {
+      "description": "the url of the request",
+      "type": "string",
+      "required": true
+    },
+    "Query": {
+      "required": false,
+      "type": "object"
+      
+    }
+  }
+}
