@@ -1,0 +1,197 @@
+{"ts":1357253063803,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":true,"ts":1357253066017,"patch":[[{"diffs":[[1,"var io = require('socket.io').listen(8000);"]],"start1":0,"start2":0,"length1":0,"length2":43}]],"length":43,"saved":false}
+{"ts":1357253156750,"patch":[[{"diffs":[[0,"ten("],[-1,"8000"],[1,"process.env.PORT"],[0,");"]],"start1":33,"start2":33,"length1":10,"length2":22}]],"length":55,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1357296000195,"patch":[[{"diffs":[[-1,"var io = "],[0,"requ"]],"start1":0,"start2":0,"length1":13,"length2":4}]],"length":46,"saved":false}
+{"ts":1357296250806,"patch":[[{"diffs":[[1,"\n"],[0,"require("]],"start1":0,"start2":0,"length1":8,"length2":9}]],"length":47,"saved":false}
+{"ts":1357296252615,"patch":[[{"diffs":[[0,"\n"],[1,"io ="],[0,"require("]],"start1":0,"start2":0,"length1":9,"length2":13}]],"length":51,"saved":false}
+{"ts":1357296253689,"patch":[[{"diffs":[[0,"\nio ="],[1," "],[0,"require("]],"start1":0,"start2":0,"length1":13,"length2":14}]],"length":52,"saved":false}
+{"ts":1357296255609,"patch":[[{"diffs":[[0,"\n"],[1,"var "],[0,"io = req"]],"start1":0,"start2":0,"length1":9,"length2":13}]],"length":56,"saved":false}
+{"ts":1357296257315,"patch":[[{"diffs":[[1,"Server = new http.Server();\nServer.listen(process.env.PORT, process.env.IP, BackLog, function(error) {\n    if (error) {\n        console.log(\"Error: \" + error);\n    } else if (!error) {\n        console.log(\"Server started sucsessfully.\");\n        Server.on(\"request\", HandleRequest.HandleRequest);\n        console.log(\"Server now ready for requests.\");\n    }\n});"],[0,"\nvar io "]],"start1":0,"start2":0,"length1":8,"length2":369}]],"length":417,"saved":false}
+{"ts":1357296260344,"patch":[[{"diffs":[[1,"\n"],[0,"Server = new"]],"start1":0,"start2":0,"length1":12,"length2":13}]],"length":418,"saved":false}
+{"ts":1357296263826,"patch":[[{"diffs":[[1,"va"],[0,"\nServer = ne"]],"start1":0,"start2":0,"length1":12,"length2":14}]],"length":420,"saved":false}
+{"ts":1357296265263,"patch":[[{"diffs":[[0,"va"],[1,"r htp"],[0,"\nServer "]],"start1":0,"start2":0,"length1":10,"length2":15}]],"length":425,"saved":false}
+{"ts":1357296267798,"patch":[[{"diffs":[[0,"var ht"],[-1,"p"],[1,"tp = "],[0,"\nServer "]],"start1":0,"start2":0,"length1":15,"length2":19}]],"length":429,"saved":false}
+{"ts":1357296269319,"patch":[[{"diffs":[[0," http = "],[1,"r"],[0,"\nServer "]],"start1":3,"start2":3,"length1":16,"length2":17}]],"length":430,"saved":false}
+{"ts":1357296270974,"patch":[[{"diffs":[[0,"http = r"],[1,"equire(\"http\")"],[0,"\nServer "]],"start1":4,"start2":4,"length1":16,"length2":30}]],"length":444,"saved":false}
+{"ts":1357296272649,"patch":[[{"diffs":[[0,"(\"http\")"],[1,";"],[0,"\nServer "]],"start1":18,"start2":18,"length1":16,"length2":17}]],"length":445,"saved":false}
+{"ts":1357296274571,"patch":[[{"diffs":[[0,"re(\"http"],[-1,"\""],[0,");\nServe"]],"start1":16,"start2":16,"length1":17,"length2":16}]],"length":444,"saved":false}
+{"ts":1357296276488,"patch":[[{"diffs":[[0,"re(\"http"],[1,"'"],[0,");\nServe"]],"start1":16,"start2":16,"length1":16,"length2":17}]],"length":445,"saved":false}
+{"ts":1357296279139,"patch":[[{"diffs":[[0,"require("],[-1,"\""],[1,"'"],[0,"http');\n"]],"start1":11,"start2":11,"length1":17,"length2":17}]],"length":445,"saved":false}
+{"ts":1357296289636,"patch":[[{"diffs":[[0,".listen("],[-1,"process.env.PORT"],[0,");"]],"start1":419,"start2":419,"length1":26,"length2":10}]],"length":429,"saved":false}
+{"ts":1357296292812,"patch":[[{"diffs":[[0,".listen("],[1,"Server"],[0,");"]],"start1":419,"start2":419,"length1":10,"length2":16}]],"length":435,"saved":false}
+{"ts":1357296297375,"patch":[[{"diffs":[[0,"http');\n"],[1,"var "],[0,"Server ="]],"start1":20,"start2":20,"length1":16,"length2":20}]],"length":439,"saved":false}
+{"ts":1357296305158,"patch":[[{"diffs":[[0,"http');\n"],[1,"va\n"],[0,"var Serv"]],"start1":20,"start2":20,"length1":16,"length2":19}]],"length":442,"saved":false}
+{"ts":1357296306305,"patch":[[{"diffs":[[0,"tp');\nva"],[1,"r Ba"],[0,"\nvar Ser"]],"start1":22,"start2":22,"length1":16,"length2":20}]],"length":446,"saved":false}
+{"ts":1357296307055,"patch":[[{"diffs":[[0,";\nvar Ba"],[1,"ck"],[0,"\nvar Ser"]],"start1":26,"start2":26,"length1":16,"length2":18}]],"length":448,"saved":false}
+{"ts":1357296308180,"patch":[[{"diffs":[[0,"var Back"],[1,"Log"],[0,"\nvar Ser"]],"start1":28,"start2":28,"length1":16,"length2":19}]],"length":451,"saved":false}
+{"ts":1357296311530,"patch":[[{"diffs":[[0," BackLog"],[1,"ue"],[0,"\nvar Ser"]],"start1":31,"start2":31,"length1":16,"length2":18}]],"length":453,"saved":false}
+{"ts":1357296313970,"patch":[[{"diffs":[[0," BackLog"],[-1,"ue"],[1,";"],[0,"\nvar Ser"]],"start1":31,"start2":31,"length1":18,"length2":17}]],"length":452,"saved":false}
+{"ts":1357296328379,"patch":[[{"diffs":[[0,"    "],[-1,"    Server.on(\"request\", HandleRequest.HandleRequest);"],[0,"\n   "]],"start1":283,"start2":283,"length1":62,"length2":8}]],"length":398,"saved":false}
+{"ts":1357296369888,"patch":[[{"diffs":[[0,"\");\n    "],[1,"    "],[0,"\n       "]],"start1":279,"start2":279,"length1":16,"length2":20}]],"length":402,"saved":false}
+{"ts":1357296534380,"patch":[[{"diffs":[[0,"        "],[1,"ools"],[0,"\n       "]],"start1":283,"start2":283,"length1":16,"length2":20}]],"length":406,"saved":false}
+{"ts":1357296543261,"patch":[[{"diffs":[[0,"\");\n"],[-1,"        ools"],[0,"\n   "]],"start1":279,"start2":279,"length1":20,"length2":8}]],"length":394,"saved":false}
+{"ts":1357296626794,"patch":[[{"diffs":[[0,"lly.\");\n"],[1,"        Server.on(\"request\", HandleRequest.HandleRequest);"],[0,"\n       "]],"start1":275,"start2":275,"length1":16,"length2":74}]],"length":452,"saved":false}
+{"ts":1357296632425,"patch":[[{"diffs":[[0,"http');\n"],[1,"var \n"],[0,"var Back"]],"start1":20,"start2":20,"length1":16,"length2":21}]],"length":457,"saved":false}
+{"ts":1357296634317,"patch":[[{"diffs":[[0,"');\nvar "],[1,"HandleRequest"],[0,"\nvar Bac"]],"start1":24,"start2":24,"length1":16,"length2":29}]],"length":470,"saved":false}
+{"ts":1357296635046,"patch":[[{"diffs":[[0,"leReques"],[-1,"t"],[0,"\nvar Bac"]],"start1":36,"start2":36,"length1":17,"length2":16}]],"length":469,"saved":false}
+{"ts":1357296636521,"patch":[[{"diffs":[[0,"leReques"],[1,"t"],[0,"\nvar Bac"]],"start1":36,"start2":36,"length1":16,"length2":17}]],"length":470,"saved":false}
+{"ts":1357296639154,"patch":[[{"diffs":[[0,"eRequest"],[1," = require(\"\")"],[0,"\nvar Bac"]],"start1":37,"start2":37,"length1":16,"length2":30}]],"length":484,"saved":false}
+{"ts":1357296641524,"patch":[[{"diffs":[[0,"equire(\""],[1,"./"],[0,"\")\nvar B"]],"start1":49,"start2":49,"length1":16,"length2":18}]],"length":486,"saved":false}
+{"ts":1357296643464,"patch":[[{"diffs":[[0,"uire(\"./"],[1,"H"],[0,"\")\nvar B"]],"start1":51,"start2":51,"length1":16,"length2":17}]],"length":487,"saved":false}
+{"ts":1357296644256,"patch":[[{"diffs":[[0,"ire(\"./H"],[1,"a"],[0,"\")\nvar B"]],"start1":52,"start2":52,"length1":16,"length2":17}]],"length":488,"saved":false}
+{"ts":1357296645883,"patch":[[{"diffs":[[0,"re(\"./Ha"],[1,"ndleRequest"],[0,"\")\nvar B"]],"start1":53,"start2":53,"length1":16,"length2":27}]],"length":499,"saved":false}
+{"ts":1357296647943,"patch":[[{"diffs":[[0,"equest\")"],[1,";"],[0,"\nvar Bac"]],"start1":66,"start2":66,"length1":16,"length2":17}]],"length":500,"saved":false}
+{"ts":1357296968728,"patch":[[{"diffs":[[0,"{\n  "],[-1,"  if (error) {\n        console.log(\"Error: \" + error);\n    } else if (!error) {\n        console.log(\"Server started sucsessfully.\");\n        Server.on(\"request\", HandleRequest.HandleRequest);\n        console.log(\"Server now ready for requests.\");\n    }"],[0,"\n});"]],"start1":194,"start2":194,"length1":260,"length2":8}]],"length":248,"saved":false}
+{"ts":1357296974159,"patch":[[{"diffs":[[0,"');\n"],[-1,"var HandleRequest = require(\"./HandleRequest\");"],[0,"\nvar"]],"start1":24,"start2":24,"length1":55,"length2":8}]],"length":201,"saved":false}
+{"ts":1357297012971,"patch":[[{"diffs":[[0,"http');\n"],[1,"var HandleRequest = require(\"./HandleRequest\");"],[0,"\nvar Bac"]],"start1":20,"start2":20,"length1":16,"length2":63},{"diffs":[[0,"or) {\n  "],[1,"  if (error) {\n        console.log(\"Error: \" + error);\n    } else if (!error) {\n        console.log(\"Server started sucsessfully.\");\n        Server.on(\"request\", HandleRequest.HandleRequest);\n        console.log(\"Server now ready for requests.\");\n    }"],[0,"\n});\nvar"]],"start1":190,"start2":190,"length1":16,"length2":268}]],"length":500,"saved":false}
+{"ts":1357297182056,"patch":[[{"diffs":[[-1,"var http = require('http');\nvar HandleRequest = require(\"./HandleRequest\");\nvar BackLog;\nvar Server = new http.Server();\nServer.listen(process.env.PORT, process.env.IP, BackLog, function(error) {\n    if (error) {\n        console.log(\"Error: \" + error);\n    } else if (!error) {\n        console.log(\"Server started sucsessfully.\");\n        Server.on(\"request\", HandleRequest.HandleRequest);\n        console.log(\"Server now ready for requests.\");\n    }\n});"],[0,"\nvar"]],"start1":0,"start2":0,"length1":458,"length2":4}]],"length":46,"saved":false}
+{"contributors":[],"silentsave":true,"restoring":1357296543261,"ts":1358360336740,"patch":[[{"diffs":[[1,"var http = require('http');\nvar BackLog;\nvar Server = new http.Server();\nServer.listen(process.env.PORT, process.env.IP, BackLog, function(error) {\n    if (error) {\n        console.log(\"Error: \" + error);\n    } else if (!error) {\n        console.log(\"Server started sucsessfully.\");\n\n        console.log(\"Server now ready for requests.\");\n    }\n});"],[0,"\nvar io "]],"start1":0,"start2":0,"length1":8,"length2":356}]],"length":394,"saved":false}
+{"ts":1358360471347,"patch":[[{"diffs":[[0,"});\n"],[-1,"var io = require('socket.io').listen(Server);"]],"start1":345,"start2":345,"length1":49,"length2":4}]],"length":349,"saved":false}
+{"ts":1358360476213,"patch":[[{"diffs":[[0,"lly.\");\n"],[1,"        "],[0,"\n       "]],"start1":275,"start2":275,"length1":16,"length2":24}]],"length":357,"saved":false}
+{"ts":1358360477844,"patch":[[{"diffs":[[0,"        "],[1,"var io = require('socket.io').listen(Server);"],[0,"\n       "]],"start1":283,"start2":283,"length1":16,"length2":61}]],"length":402,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1358365208698,"patch":[[{"diffs":[[0,"\");\n    "],[-1,"}"],[1,"    io.sockets.on('connection', function (socket) {\n            console.log('New connection!');\n            socket.emit('spam');\n            socket.on('eggs', function(r) {\n               console.log(r);\n               socket.emit('foo', {t: 'hello'});\n                \n            });\n    })"],[0,"\n});\n"]],"start1":388,"start2":388,"length1":14,"length2":305}]],"length":693,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1358713210760,"patch":[[{"diffs":[[0,";\n    })"],[1,";"],[0,"\n});\n"]],"start1":680,"start2":680,"length1":13,"length2":14}]],"length":694,"saved":false}
+{"ts":1358713243032,"patch":[[{"diffs":[[0,"   });\n}"],[1,"\n"],[0,");\n"]],"start1":683,"start2":683,"length1":11,"length2":12}]],"length":695,"saved":false}
+{"ts":1358713247336,"patch":[[{"diffs":[[0,"  });\n}\n"],[1,"}"],[0,");\n"]],"start1":684,"start2":684,"length1":11,"length2":12}]],"length":696,"saved":false}
+{"ts":1358713341506,"patch":[[{"diffs":[[0,"rver();\n"],[1,"\n"],[0,"Server.l"]],"start1":65,"start2":65,"length1":16,"length2":17}]],"length":697,"saved":false}
+{"ts":1358713343323,"patch":[[{"diffs":[[0,"rver();\n"],[1,"cons"],[0,"\nServer."]],"start1":65,"start2":65,"length1":16,"length2":20}]],"length":701,"saved":false}
+{"ts":1358713343936,"patch":[[{"diffs":[[0,"();\ncons"],[1,"ole"],[0,"\nServer."]],"start1":69,"start2":69,"length1":16,"length2":19}]],"length":704,"saved":false}
+{"ts":1358713344744,"patch":[[{"diffs":[[0,"\nconsole"],[1,"."],[0,"\nServer."]],"start1":72,"start2":72,"length1":16,"length2":17}]],"length":705,"saved":false}
+{"ts":1358713346667,"patch":[[{"diffs":[[0,"console."],[1,"log()"],[0,"\nServer."]],"start1":73,"start2":73,"length1":16,"length2":21}]],"length":710,"saved":false}
+{"ts":1358713348468,"patch":[[{"diffs":[[0,"ole.log("],[1,"'Se'"],[0,")\nServer"]],"start1":77,"start2":77,"length1":16,"length2":20}]],"length":714,"saved":false}
+{"ts":1358713349537,"patch":[[{"diffs":[[0,".log('Se"],[1,"rver"],[0,"')\nServe"]],"start1":80,"start2":80,"length1":16,"length2":20}]],"length":718,"saved":false}
+{"ts":1358713350389,"patch":[[{"diffs":[[0,"('Server"],[1," A"],[0,"')\nServe"]],"start1":84,"start2":84,"length1":16,"length2":18}]],"length":720,"saved":false}
+{"ts":1358713351257,"patch":[[{"diffs":[[0,"ver "],[-1,"A"],[1,"ad"],[0,"')\nS"]],"start1":89,"start2":89,"length1":9,"length2":10}]],"length":721,"saved":false}
+{"ts":1358713353480,"patch":[[{"diffs":[[0,"erver ad"],[1,"dress:"],[0,"')\nServe"]],"start1":87,"start2":87,"length1":16,"length2":22}]],"length":727,"saved":false}
+{"ts":1358713354287,"patch":[[{"diffs":[[0,"ddress:'"],[1," "],[0,")\nServer"]],"start1":94,"start2":94,"length1":16,"length2":17}]],"length":728,"saved":false}
+{"ts":1358713356180,"patch":[[{"diffs":[[0,"ddress:'"],[-1," "],[1,".c"],[0,")\nServer"]],"start1":94,"start2":94,"length1":17,"length2":18}]],"length":729,"saved":false}
+{"ts":1358713359147,"patch":[[{"diffs":[[0,"ress:'.c"],[1,"oncat()"],[0,")\nServer"]],"start1":96,"start2":96,"length1":16,"length2":23}]],"length":736,"saved":false}
+{"ts":1358713364956,"patch":[[{"diffs":[[0,".concat("],[1,"process.env.P"],[0,"))\nServe"]],"start1":102,"start2":102,"length1":16,"length2":29}]],"length":749,"saved":false}
+{"ts":1358713365505,"patch":[[{"diffs":[[0,"ss.env.P"],[1,"OR"],[0,"))\nServe"]],"start1":115,"start2":115,"length1":16,"length2":18}]],"length":751,"saved":false}
+{"ts":1358713366606,"patch":[[{"diffs":[[0,".env.POR"],[1,"T"],[0,"))\nServe"]],"start1":117,"start2":117,"length1":16,"length2":17}]],"length":752,"saved":false}
+{"ts":1358713373035,"patch":[[{"diffs":[[0,".concat("],[1,"P"],[0,"process."]],"start1":102,"start2":102,"length1":16,"length2":17}]],"length":753,"saved":false}
+{"ts":1358713374508,"patch":[[{"diffs":[[0,".concat("],[-1,"P"],[0,"process."]],"start1":102,"start2":102,"length1":17,"length2":16}]],"length":752,"saved":false}
+{"ts":1358713375225,"patch":[[{"diffs":[[0,".concat("],[1,"pr"],[0,"process."]],"start1":102,"start2":102,"length1":16,"length2":18}]],"length":754,"saved":false}
+{"ts":1358713377591,"patch":[[{"diffs":[[0,"oncat(pr"],[1,"o0"],[0,"process."]],"start1":104,"start2":104,"length1":16,"length2":18}]],"length":756,"saved":false}
+{"ts":1358713378125,"patch":[[{"diffs":[[0,"(pro"],[-1,"0"],[0,"proc"]],"start1":109,"start2":109,"length1":9,"length2":8}]],"length":755,"saved":false}
+{"ts":1358713383951,"patch":[[{"diffs":[[0,"ess:"],[1," "],[0,"'"],[-1,".concat(proprocess.env.PORT))"],[0,"\nSer"]],"start1":97,"start2":97,"length1":38,"length2":10}]],"length":727,"saved":false}
+{"ts":1358713384411,"patch":[[{"diffs":[[0,"dress: '"],[1," "],[0,"\nServer."]],"start1":95,"start2":95,"length1":16,"length2":17}]],"length":728,"saved":false}
+{"ts":1358713385766,"patch":[[{"diffs":[[0,"ress: ' "],[1,"+ "],[0,"\nServer."]],"start1":96,"start2":96,"length1":16,"length2":18}]],"length":730,"saved":false}
+{"ts":1358713390314,"patch":[[{"diffs":[[0,"ss: ' + "],[1,"process"],[0,"\nServer."]],"start1":98,"start2":98,"length1":16,"length2":23}]],"length":737,"saved":false}
+{"ts":1358713390881,"patch":[[{"diffs":[[0," process"],[1,"."],[0,"\nServer."]],"start1":105,"start2":105,"length1":16,"length2":17}]],"length":738,"saved":false}
+{"ts":1358713392311,"patch":[[{"diffs":[[0,"process."],[1,"env."],[0,"\nServer."]],"start1":106,"start2":106,"length1":16,"length2":20}]],"length":742,"saved":false}
+{"ts":1358713393008,"patch":[[{"diffs":[[0,"ess.env."],[1,"IP"],[0,"\nServer."]],"start1":110,"start2":110,"length1":16,"length2":18}]],"length":744,"saved":false}
+{"ts":1358713396603,"patch":[[{"diffs":[[0,"s.env.IP"],[1," + "],[0,"\nServer."]],"start1":112,"start2":112,"length1":16,"length2":19}]],"length":747,"saved":false}
+{"ts":1358713397218,"patch":[[{"diffs":[[0,"nv.IP + "],[1,"''"],[0,"\nServer."]],"start1":115,"start2":115,"length1":16,"length2":18}]],"length":749,"saved":false}
+{"ts":1358713399517,"patch":[[{"diffs":[[0,"v.IP + '"],[1,":"],[0,"'\nServer"]],"start1":116,"start2":116,"length1":16,"length2":17}]],"length":750,"saved":false}
+{"ts":1358713402786,"patch":[[{"diffs":[[0,"IP + ':'"],[1," + Pr"],[0,"\nServer."]],"start1":118,"start2":118,"length1":16,"length2":21}]],"length":755,"saved":false}
+{"ts":1358713404439,"patch":[[{"diffs":[[0,"' + "],[-1,"Pr"],[1,"process"],[0,"\nSer"]],"start1":125,"start2":125,"length1":10,"length2":15}]],"length":760,"saved":false}
+{"ts":1358713405846,"patch":[[{"diffs":[[0," process"],[1,"."],[0,"\nServer."]],"start1":128,"start2":128,"length1":16,"length2":17}]],"length":761,"saved":false}
+{"ts":1358713408726,"patch":[[{"diffs":[[0,"process."],[1,"env."],[0,"\nServer."]],"start1":129,"start2":129,"length1":16,"length2":20}]],"length":765,"saved":false}
+{"ts":1358713410971,"patch":[[{"diffs":[[0,"ess.env."],[1,"PORT"],[0,"\nServer."]],"start1":133,"start2":133,"length1":16,"length2":20}]],"length":769,"saved":false}
+{"ts":1358713413005,"patch":[[{"diffs":[[0,"env.PORT"],[1," + "],[0,"\nServer."]],"start1":137,"start2":137,"length1":16,"length2":19}]],"length":772,"saved":false}
+{"ts":1358713417044,"patch":[[{"diffs":[[0,"nv.PORT "],[-1,"+ "],[0,"\nServer."]],"start1":138,"start2":138,"length1":18,"length2":16}]],"length":770,"saved":false}
+{"ts":1358713422538,"patch":[[{"diffs":[[0,"ddress: "],[-1,"'"],[1,"\""],[0," + proce"]],"start1":94,"start2":94,"length1":17,"length2":17}]],"length":770,"saved":false}
+{"ts":1358713425394,"patch":[[{"diffs":[[0,"ole.log("],[-1,"'"],[1,"\""],[0,"Server a"]],"start1":77,"start2":77,"length1":17,"length2":17}]],"length":770,"saved":false}
+{"ts":1358713430706,"patch":[[{"diffs":[[0,"console.log("],[-1,"\""],[1,"'"],[0,"Server addre"]],"start1":73,"start2":73,"length1":25,"length2":25},{"diffs":[[0,"ddress: "],[-1,"\""],[0," + proce"]],"start1":94,"start2":94,"length1":17,"length2":16}]],"length":769,"saved":false}
+{"ts":1358713431239,"patch":[[{"diffs":[[0,"ddress: "],[1,"'"],[0," + proce"]],"start1":94,"start2":94,"length1":16,"length2":17}]],"length":770,"saved":false}
+{"ts":1358713451556,"patch":[[{"diffs":[[0,"ddress: "],[1,"\\"],[0,"' + proc"]],"start1":94,"start2":94,"length1":16,"length2":17}]],"length":771,"saved":false}
+{"ts":1358713457459,"patch":[[{"diffs":[[0,"ress: \\'"],[1,"'"],[0," + proce"]],"start1":96,"start2":96,"length1":16,"length2":17}]],"length":772,"saved":false}
+{"ts":1358713467166,"patch":[[{"diffs":[[0,"nv.PORT "],[1," "],[0,"\nServer."]],"start1":140,"start2":140,"length1":16,"length2":17}]],"length":773,"saved":false}
+{"ts":1358713470048,"patch":[[{"diffs":[[0,"nv.PORT "],[1,"+ ''"],[0," \nServer"]],"start1":140,"start2":140,"length1":16,"length2":20}]],"length":777,"saved":false}
+{"ts":1358713472312,"patch":[[{"diffs":[[0,".PORT + "],[1,"'\\"],[0,"'' \nServ"]],"start1":142,"start2":142,"length1":16,"length2":18}]],"length":779,"saved":false}
+{"ts":1358713476068,"patch":[[{"diffs":[[0,"T + '\\''"],[1,");"],[0," \nServer"]],"start1":146,"start2":146,"length1":16,"length2":18}]],"length":781,"saved":false}
+{"ts":1358754501089,"patch":[[{"diffs":[[1,"\n"],[0,"var http = r"]],"start1":0,"start2":0,"length1":12,"length2":13}]],"length":782,"saved":false}
+{"ts":1358754504582,"patch":[[{"diffs":[[1,"/*"],[0,"\nvar http = "]],"start1":0,"start2":0,"length1":12,"length2":14}]],"length":784,"saved":false}
+{"ts":1358754509333,"patch":[[{"diffs":[[0,"  });\n}\n});\n"],[1,"*/"]],"start1":772,"start2":772,"length1":12,"length2":14}]],"length":786,"saved":false}
+{"ts":1358754510005,"patch":[[{"diffs":[[0,"}\n});\n*/"],[1,"\n"]],"start1":778,"start2":778,"length1":8,"length2":9}]],"length":787,"saved":false}
+{"ts":1358754510920,"patch":[[{"diffs":[[0,"\n});\n*/\n"],[1,"var app = require('http').createServer(handler)\n  , io = require('socket.io').listen(app)\n  , fs = require('fs')\n\napp.listen(80);\n\nfunction handler (req, res) {\n  fs.readFile(__dirname + '/index.html',\n  function (err, data) {\n    if (err) {\n      res.writeHead(500);\n      return res.end('Error loading index.html');\n    }\n\n    res.writeHead(200);\n    res.end(data);\n  });\n}\n\nio.sockets.on('connection', function (socket) {\n  socket.emit('news', { hello: 'world' });\n  socket.on('my other event', function (data) {\n    console.log(data);\n  });\n});"]],"start1":779,"start2":779,"length1":8,"length2":556}]],"length":1335,"saved":false}
+{"ts":1358754523785,"patch":[[{"diffs":[[0,"ame + '/"],[-1,"index"],[0,".html',\n"]],"start1":968,"start2":968,"length1":21,"length2":16}]],"length":1330,"saved":false}
+{"ts":1358754525586,"patch":[[{"diffs":[[0,"ame + '/"],[1,"test"],[0,".html',\n"]],"start1":968,"start2":968,"length1":16,"length2":20}]],"length":1334,"saved":false}
+{"ts":1358754530681,"patch":[[{"diffs":[[0,"ing "],[-1,"index"],[1,"test"],[0,".htm"]],"start1":1086,"start2":1086,"length1":13,"length2":12}]],"length":1333,"saved":false}
+{"ts":1358754601880,"patch":[[{"diffs":[[0,"ten("],[-1,"80"],[0,");\n\n"]],"start1":908,"start2":908,"length1":10,"length2":8}]],"length":1331,"saved":false}
+{"ts":1358754603419,"patch":[[{"diffs":[[0,".listen("],[1,"po"],[0,");\n\nfunc"]],"start1":904,"start2":904,"length1":16,"length2":18}]],"length":1333,"saved":false}
+{"ts":1358754604615,"patch":[[{"diffs":[[0,"listen(p"],[-1,"o"],[1,"rocess"],[0,");\n\nfunc"]],"start1":905,"start2":905,"length1":17,"length2":22}]],"length":1338,"saved":false}
+{"ts":1358754605324,"patch":[[{"diffs":[[0,"(process"],[1,"."],[0,");\n\nfunc"]],"start1":911,"start2":911,"length1":16,"length2":17}]],"length":1339,"saved":false}
+{"ts":1358754605950,"patch":[[{"diffs":[[0,"process."],[1,"i"],[0,");\n\nfunc"]],"start1":912,"start2":912,"length1":16,"length2":17}]],"length":1340,"saved":false}
+{"ts":1358754606876,"patch":[[{"diffs":[[0,"rocess.i"],[1,"p"],[0,");\n\nfunc"]],"start1":913,"start2":913,"length1":16,"length2":17}]],"length":1341,"saved":false}
+{"ts":1358754609572,"patch":[[{"diffs":[[0,"ess."],[-1,"ip"],[0,");\n\n"]],"start1":916,"start2":916,"length1":10,"length2":8}]],"length":1339,"saved":false}
+{"ts":1358754610150,"patch":[[{"diffs":[[0,"process."],[1,"en"],[0,");\n\nfunc"]],"start1":912,"start2":912,"length1":16,"length2":18}]],"length":1341,"saved":false}
+{"ts":1358754611532,"patch":[[{"diffs":[[0,"ocess.en"],[1,"v."],[0,");\n\nfunc"]],"start1":914,"start2":914,"length1":16,"length2":18}]],"length":1343,"saved":false}
+{"ts":1358754613265,"patch":[[{"diffs":[[0,"ess.env."],[1,"POR"],[0,");\n\nfunc"]],"start1":916,"start2":916,"length1":16,"length2":19}]],"length":1346,"saved":false}
+{"ts":1358754614351,"patch":[[{"diffs":[[0,".env.POR"],[1,"T"],[0,");\n\nfunc"]],"start1":919,"start2":919,"length1":16,"length2":17}]],"length":1347,"saved":false}
+{"ts":1358755016081,"patch":[[{"diffs":[[0,"name + '"],[1,"Server"],[0,"/test.ht"]],"start1":981,"start2":981,"length1":16,"length2":22}]],"length":1353,"saved":false}
+{"ts":1358755036710,"patch":[[{"diffs":[[0,"'Server/"],[1,"/"],[0,"test.htm"]],"start1":988,"start2":988,"length1":16,"length2":17}]],"length":1354,"saved":false}
+{"ts":1358755038982,"patch":[[{"diffs":[[0,"'Server/"],[1,"Tools"],[0,"/test.ht"]],"start1":988,"start2":988,"length1":16,"length2":21}]],"length":1359,"saved":false}
+{"ts":1358755052148,"patch":[[{"diffs":[[0,"r/Tools/"],[-1,"t"],[0,"est.html"]],"start1":994,"start2":994,"length1":17,"length2":16}]],"length":1358,"saved":false}
+{"ts":1358755053147,"patch":[[{"diffs":[[0,"r/Tools/"],[1,"T"],[0,"est.html"]],"start1":994,"start2":994,"length1":16,"length2":17}]],"length":1359,"saved":false}
+{"ts":1358755070498,"patch":[[{"diffs":[[0," + '"],[-1,"Server/Tools"],[0,"/Tes"]],"start1":985,"start2":985,"length1":20,"length2":8}]],"length":1347,"saved":false}
+{"ts":1358799769707,"patch":[[{"diffs":[[-1,"/*\n"],[0,"var "]],"start1":0,"start2":0,"length1":7,"length2":4},{"diffs":[[0,"});\n"],[-1,"*/\nvar app = require('http').createServer(handler)\n  , io = require('socket.io').listen(app)\n  , fs = require('fs')\n\napp.listen(process.env.PORT);\n\nfunction handler (req, res) {\n  fs.readFile(__dirname + '/Test.html',\n  function (err, data) {\n    if (err) {\n      res.writeHead(500);\n      return res.end('Error loading test.html');\n    }\n\n    res.writeHead(200);\n    res.end(data);\n  });\n}\n\nio.sockets.on('connection', function (socket) {\n  socket.emit('news', { hello: 'world' });\n  socket.on('my other event', function (data) {\n    console.log(data);\n  });\n});"]],"start1":777,"start2":777,"length1":567,"length2":4}]],"length":781,"saved":false}
+{"ts":1358800067904,"patch":[[{"diffs":[[0,"n(Server"],[1,","],[0,");\n     "]],"start1":411,"start2":411,"length1":16,"length2":17}]],"length":782,"saved":false}
+{"ts":1358800070255,"patch":[[{"diffs":[[0,"(Server,"],[1," {}"],[0,");\n     "]],"start1":412,"start2":412,"length1":16,"length2":19}]],"length":785,"saved":false}
+{"ts":1358800071892,"patch":[[{"diffs":[[0,"erver, {"],[1,"origins"],[0,"});\n    "]],"start1":414,"start2":414,"length1":16,"length2":23}]],"length":792,"saved":false}
+{"ts":1358800073806,"patch":[[{"diffs":[[0,"{origins"],[1,": "],[0,"});\n    "]],"start1":421,"start2":421,"length1":16,"length2":18}]],"length":794,"saved":false}
+{"ts":1358800075972,"patch":[[{"diffs":[[0,"rigins: "],[1,"*"],[0,"});\n    "]],"start1":423,"start2":423,"length1":16,"length2":17}]],"length":795,"saved":false}
+{"ts":1358800078247,"patch":[[{"diffs":[[0,"igins: *"],[1,"''"],[0,"});\n    "]],"start1":424,"start2":424,"length1":16,"length2":18}]],"length":797,"saved":false}
+{"ts":1358800080860,"patch":[[{"diffs":[[0,"gins: *'"],[-1,"'"],[0,"});\n    "]],"start1":425,"start2":425,"length1":17,"length2":16}]],"length":796,"saved":false}
+{"ts":1358800082406,"patch":[[{"diffs":[[0,"rigins: "],[1,"'"],[0,"*'});\n  "]],"start1":423,"start2":423,"length1":16,"length2":17}]],"length":797,"saved":false}
+{"ts":1358800299264,"patch":[[{"diffs":[[1,"/*\n"],[0,"var http = r"]],"start1":0,"start2":0,"length1":12,"length2":15},{"diffs":[[0,"rver"],[-1,", {origins: '*'}"],[0,");\n "]],"start1":418,"start2":418,"length1":24,"length2":8},{"diffs":[[0,"  });\n}\n});\n"],[1,"*/\nvar app = require('http').createServer(handler)\n  , io = require('socket.io').listen(app)\n  , fs = require('fs')\n\napp.listen(process.env.PORT);\n\nfunction handler (req, res) {\n  fs.readFile(__dirname + '/Test.html',\n  function (err, data) {\n    if (err) {\n      res.writeHead(500);\n      return res.end('Error loading test.html');\n    }\n\n    res.writeHead(200);\n    res.end(data);\n  });\n}\n\nio.sockets.on('connection', function (socket) {\n  socket.emit('news', { hello: 'world' });\n  socket.on('my other event', function (data) {\n    console.log(data);\n  });\n});"]],"start1":772,"start2":772,"length1":12,"length2":575}]],"length":1347,"saved":false}
+{"ts":1358800307301,"patch":[[{"diffs":[[0,"e('fs')\n"],[1,"V"],[0,"\napp.lis"]],"start1":892,"start2":892,"length1":16,"length2":17}]],"length":1348,"saved":false}
+{"ts":1358800308383,"patch":[[{"diffs":[[0,"s')\n"],[-1,"V"],[0,"\napp"]],"start1":896,"start2":896,"length1":9,"length2":8}]],"length":1347,"saved":false}
+{"ts":1358800312534,"patch":[[{"diffs":[[0,"sten(app"],[1,", {}"],[0,")\n  , fs"]],"start1":867,"start2":867,"length1":16,"length2":20}]],"length":1351,"saved":false}
+{"ts":1358800314175,"patch":[[{"diffs":[[0,"n(app, {"],[1,"o"],[0,"})\n  , f"]],"start1":870,"start2":870,"length1":16,"length2":17}]],"length":1352,"saved":false}
+{"ts":1358800316056,"patch":[[{"diffs":[[0,"(app, {o"],[1,"rigins: "],[0,"})\n  , f"]],"start1":871,"start2":871,"length1":16,"length2":24}]],"length":1360,"saved":false}
+{"ts":1358800316888,"patch":[[{"diffs":[[0,"rigins: "],[1,"''"],[0,"})\n  , f"]],"start1":879,"start2":879,"length1":16,"length2":18}]],"length":1362,"saved":false}
+{"ts":1358800319617,"patch":[[{"diffs":[[0,"igins: '"],[1,"*0"],[0,"'})\n  , "]],"start1":880,"start2":880,"length1":16,"length2":18}]],"length":1364,"saved":false}
+{"ts":1358800320219,"patch":[[{"diffs":[[0,"gins: '*"],[-1,"0"],[0,"'})\n  , "]],"start1":881,"start2":881,"length1":17,"length2":16}]],"length":1363,"saved":false}
+{"ts":1358800743933,"patch":[[{"diffs":[[0,"cket) {\n"],[1,"\n"],[0,"  socket"]],"start1":1232,"start2":1232,"length1":16,"length2":17}]],"length":1364,"saved":false}
+{"ts":1358800746851,"patch":[[{"diffs":[[0,"cket) {\n"],[1,"    "],[0,"\n  socke"]],"start1":1232,"start2":1232,"length1":16,"length2":20}]],"length":1368,"saved":false}
+{"ts":1358800747951,"patch":[[{"diffs":[[0,"ket) {\n "],[-1,"   "],[0,"\n  socke"]],"start1":1233,"start2":1233,"length1":19,"length2":16}]],"length":1365,"saved":false}
+{"ts":1358800749385,"patch":[[{"diffs":[[0,"ket) {\n "],[1,"   "],[0,"\n  socke"]],"start1":1233,"start2":1233,"length1":16,"length2":19}]],"length":1368,"saved":false}
+{"ts":1358800753217,"patch":[[{"diffs":[[0,") {\n    "],[1,"console.log('')"],[0,"\n  socke"]],"start1":1236,"start2":1236,"length1":16,"length2":31}]],"length":1383,"saved":false}
+{"ts":1358800753969,"patch":[[{"diffs":[[0,"le.log('"],[1,"N"],[0,"')\n  soc"]],"start1":1249,"start2":1249,"length1":16,"length2":17}]],"length":1384,"saved":false}
+{"ts":1358800755410,"patch":[[{"diffs":[[0,"e.log('N"],[1,"ew Co"],[0,"')\n  soc"]],"start1":1250,"start2":1250,"length1":16,"length2":21}]],"length":1389,"saved":false}
+{"ts":1358800757806,"patch":[[{"diffs":[[0,"('New Co"],[1,"nnection"],[0,"')\n  soc"]],"start1":1255,"start2":1255,"length1":16,"length2":24}]],"length":1397,"saved":false}
+{"ts":1358800761126,"patch":[[{"diffs":[[0,"ection')"],[1,";"],[0,"\n  socke"]],"start1":1265,"start2":1265,"length1":16,"length2":17}]],"length":1398,"saved":false}
+{"ts":1358800763689,"patch":[[{"diffs":[[0,"nnection"],[1,"!"],[0,"');\n  so"]],"start1":1263,"start2":1263,"length1":16,"length2":17}]],"length":1399,"saved":false}
+{"ts":1358800770092,"patch":[[{"diffs":[[0,"g('New Conne"],[-1,"cti"],[1,"x"],[0,"on!');\n  soc"]],"start1":1254,"start2":1254,"length1":27,"length2":25}]],"length":1397,"saved":false}
+{"ts":1358800770901,"patch":[[{"diffs":[[0,"w Connex"],[1,"i"],[0,"on!');\n "]],"start1":1259,"start2":1259,"length1":16,"length2":17}]],"length":1398,"saved":false}
+{"ts":1358800854775,"patch":[[{"diffs":[[0,"onne"],[-1,"xi"],[0,"on!'"]],"start1":1262,"start2":1262,"length1":10,"length2":8}]],"length":1396,"saved":false}
+{"ts":1358800859644,"patch":[[{"diffs":[[0,"ew Conne"],[1,"xi"],[0,"on!');\n "]],"start1":1258,"start2":1258,"length1":16,"length2":18}]],"length":1398,"saved":false}
+{"ts":1358800866113,"patch":[[{"diffs":[[0,"(app"],[-1,", {origins: '*'}"],[0,")\n  "]],"start1":871,"start2":871,"length1":24,"length2":8}]],"length":1382,"saved":false}
+{"ts":1358800886276,"patch":[[{"diffs":[[0,"sten(app"],[1,", {origins: '*'}"],[0,")\n  , fs"]],"start1":867,"start2":867,"length1":16,"length2":32},{"diffs":[[0,"w Connex"],[-1,"i"],[0,"on!');\n "]],"start1":1259,"start2":1259,"length1":17,"length2":16}]],"length":1397,"saved":false}
+{"ts":1358800887970,"patch":[[{"diffs":[[0,"w Connex"],[1,"i"],[0,"on!');\n "]],"start1":1259,"start2":1259,"length1":16,"length2":17}]],"length":1398,"saved":false}
+{"ts":1358800937250,"patch":[[{"diffs":[[-1,"/*\n"],[0,"var "]],"start1":0,"start2":0,"length1":7,"length2":4},{"diffs":[[0,"});\n"],[-1,"*/\nvar app = require('http').createServer(handler)\n  , io = require('socket.io').listen(app, {origins: '*'})\n  , fs = require('fs')\n\napp.listen(process.env.PORT);\n\nfunction handler (req, res) {\n  fs.readFile(__dirname + '/Test.html',\n  function (err, data) {\n    if (err) {\n      res.writeHead(500);\n      return res.end('Error loading test.html');\n    }\n\n    res.writeHead(200);\n    res.end(data);\n  });\n}\n\nio.sockets.on('connection', function (socket) {\n    console.log('New Connexion!');\n  socket.emit('news', { hello: 'world' });\n  socket.on('my other event', function (data) {\n    console.log(data);\n  });\n});"]],"start1":777,"start2":777,"length1":618,"length2":4}]],"length":781,"saved":false}
+{"ts":1358800946890,"patch":[[{"diffs":[[0,"n(Server"],[1,", "],[0,");\n     "]],"start1":411,"start2":411,"length1":16,"length2":18}]],"length":783,"saved":false}
+{"ts":1358800948580,"patch":[[{"diffs":[[0,"Server, "],[1,"{o}"],[0,");\n     "]],"start1":413,"start2":413,"length1":16,"length2":19}]],"length":786,"saved":false}
+{"ts":1358800950258,"patch":[[{"diffs":[[0,"rver, {o"],[1,"rigin:"],[0,"});\n    "]],"start1":415,"start2":415,"length1":16,"length2":22}]],"length":792,"saved":false}
+{"ts":1358800951664,"patch":[[{"diffs":[[0,"{origin:"],[1," ''"],[0,"});\n    "]],"start1":421,"start2":421,"length1":16,"length2":19}]],"length":795,"saved":false}
+{"ts":1358800953510,"patch":[[{"diffs":[[0,"rigin: '"],[1,"*"],[0,"'});\n   "]],"start1":423,"start2":423,"length1":16,"length2":17}]],"length":796,"saved":false}
+{"ts":1358801034837,"patch":[[{"diffs":[[0,"rver"],[-1,", {origin: '*'}"],[0,");\n "]],"start1":415,"start2":415,"length1":23,"length2":8}]],"length":781,"saved":false}
+{"ts":1358801037744,"patch":[[{"diffs":[[0,"    var "],[1,"s"],[0,"io = req"]],"start1":372,"start2":372,"length1":16,"length2":17}]],"length":782,"saved":false}
+{"ts":1358801043470,"patch":[[{"diffs":[[0,"io')"],[-1,".listen(Server);"],[1,";\n        "],[0,"\n   "]],"start1":402,"start2":402,"length1":24,"length2":18}]],"length":776,"saved":false}
+{"ts":1358801048388,"patch":[[{"diffs":[[0,"t.io');\n        "],[1,"v"],[0,"\n        console"]],"start1":400,"start2":400,"length1":32,"length2":33}]],"length":777,"saved":false}
+{"ts":1358801050135,"patch":[[{"diffs":[[0,"       v"],[1,"ar "],[0,"\n       "]],"start1":409,"start2":409,"length1":16,"length2":19}]],"length":780,"saved":false}
+{"ts":1358801051691,"patch":[[{"diffs":[[0,"    var "],[1,"io ="],[0,"\n       "]],"start1":412,"start2":412,"length1":16,"length2":20}]],"length":784,"saved":false}
+{"ts":1358801052759,"patch":[[{"diffs":[[0,"var io ="],[1," "],[0,"\n       "]],"start1":416,"start2":416,"length1":16,"length2":17}]],"length":785,"saved":false}
+{"ts":1358801053997,"patch":[[{"diffs":[[0,"var io ="],[-1," "],[0,"\n       "]],"start1":416,"start2":416,"length1":17,"length2":16}]],"length":784,"saved":false}
+{"ts":1358801092555,"patch":[[{"diffs":[[0,"   var i"],[-1,"o ="],[0,"\n       "]],"start1":413,"start2":413,"length1":19,"length2":16}]],"length":781,"saved":false}
+{"ts":1358801093870,"patch":[[{"diffs":[[0,"    var "],[-1,"i"],[0,"\n       "]],"start1":412,"start2":412,"length1":17,"length2":16}]],"length":780,"saved":false}
+{"ts":1358801095776,"patch":[[{"diffs":[[0,"        "],[-1,"var "],[0,"\n       "]],"start1":408,"start2":408,"length1":20,"length2":16}]],"length":776,"saved":false}
+{"ts":1358801097937,"patch":[[{"diffs":[[0,"t.io');\n        "],[1,"io = "],[0,"\n        console"]],"start1":400,"start2":400,"length1":32,"length2":37}]],"length":781,"saved":false}
+{"ts":1358801099438,"patch":[[{"diffs":[[0,"   io = "],[1,"sio."],[0,"\n       "]],"start1":413,"start2":413,"length1":16,"length2":20}]],"length":785,"saved":false}
+{"ts":1358801102051,"patch":[[{"diffs":[[0,"o = sio."],[1,"listen()"],[0,"\n       "]],"start1":417,"start2":417,"length1":16,"length2":24}]],"length":793,"saved":false}
+{"ts":1358801110597,"patch":[[{"diffs":[[0,".listen("],[1,"Server"],[0,")\n      "]],"start1":424,"start2":424,"length1":16,"length2":22}]],"length":799,"saved":false}
+{"ts":1358801112030,"patch":[[{"diffs":[[0,"(Server)"],[1,";"],[0,"\n       "]],"start1":431,"start2":431,"length1":16,"length2":17}]],"length":800,"saved":false}
+{"ts":1358801116038,"patch":[[{"diffs":[[0,"ket.io')"],[1,".set"],[0,";\n      "]],"start1":398,"start2":398,"length1":16,"length2":20}]],"length":804,"saved":false}
+{"ts":1358801116693,"patch":[[{"diffs":[[0,"io').set"],[1,"()"],[0,";\n      "]],"start1":402,"start2":402,"length1":16,"length2":18}]],"length":806,"saved":false}
+{"ts":1358801117318,"patch":[[{"diffs":[[0,"o').set("],[1,"''"],[0,");\n     "]],"start1":403,"start2":403,"length1":16,"length2":18}]],"length":808,"saved":false}
+{"ts":1358801117992,"patch":[[{"diffs":[[0,"').set('"],[1,"O"],[0,"');\n    "]],"start1":404,"start2":404,"length1":16,"length2":17}]],"length":809,"saved":false}
+{"ts":1358801119768,"patch":[[{"diffs":[[0,").set('O"],[1,"rigin"],[0,"');\n    "]],"start1":405,"start2":405,"length1":16,"length2":21}]],"length":814,"saved":false}
+{"ts":1358801121665,"patch":[[{"diffs":[[0,"'Origin'"],[1,", "],[0,");\n     "]],"start1":411,"start2":411,"length1":16,"length2":18}]],"length":816,"saved":false}
+{"ts":1358801122847,"patch":[[{"diffs":[[0,"rigin', "],[1,"''"],[0,");\n     "]],"start1":413,"start2":413,"length1":16,"length2":18}]],"length":818,"saved":false}
+{"ts":1358801124683,"patch":[[{"diffs":[[0,"igin', '"],[1,"*"],[0,"');\n    "]],"start1":414,"start2":414,"length1":16,"length2":17}]],"length":819,"saved":false}
+{"ts":1358801183205,"patch":[[{"diffs":[[0,"('Origin"],[1,"s"],[0,"', '*');"]],"start1":410,"start2":410,"length1":16,"length2":17}]],"length":820,"saved":false}
+{"ts":1358801185676,"patch":[[{"diffs":[[0,"').set('"],[-1,"O"],[1,"o"],[0,"rigins',"]],"start1":404,"start2":404,"length1":17,"length2":17}]],"length":820,"saved":false}
+{"ts":1358801200429,"patch":[[{"diffs":[[0,"        "],[1,"var "],[0,"io = sio"]],"start1":428,"start2":428,"length1":16,"length2":20}]],"length":824,"saved":false}
+{"ts":1358801256219,"patch":[[{"diffs":[[1,"/*\n"],[0,"var http = r"]],"start1":0,"start2":0,"length1":12,"length2":15},{"diffs":[[0,"    var "],[-1,"s"],[0,"io = req"]],"start1":375,"start2":375,"length1":17,"length2":16},{"diffs":[[0,"o')."],[-1,"set('origins', '*');\n        var io = sio."],[0,"list"]],"start1":405,"start2":405,"length1":50,"length2":8},{"diffs":[[0,"  });\n}\n});\n"],[1,"*/\nvar app = require('http').createServer(handler)\n  , io = require('socket.io').listen(app, {origins: '*'})\n  , fs = require('fs')\n\napp.listen(process.env.PORT);\n\nfunction handler (req, res) {\n  fs.readFile(__dirname + '/Test.html',\n  function (err, data) {\n    if (err) {\n      res.writeHead(500);\n      return res.end('Error loading test.html');\n    }\n\n    res.writeHead(200);\n    res.end(data);\n  });\n}\n\nio.sockets.on('connection', function (socket) {\n  socket.emit('news', { hello: 'world' });\n  socket.on('my other event', function (data) {\n    console.log(data);\n  });\n});"]],"start1":772,"start2":772,"length1":12,"length2":591}]],"length":1363,"saved":false}

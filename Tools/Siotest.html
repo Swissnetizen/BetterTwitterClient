@@ -1,0 +1,8 @@
+<script src="https://raw.github.com/LearnBoost/socket.io-client/0.9/dist/socket.io.js"></script>
+<script>
+  var socket = io.connect('http://bettertwitterclient.samarthwiz.c9.io/');
+  socket.on('news', function (data) {
+    console.log(data);
+    socket.emit('my other event', { my: 'data' });
+  });
+</script>

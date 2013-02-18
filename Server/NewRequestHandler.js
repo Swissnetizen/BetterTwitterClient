@@ -42,7 +42,8 @@ var ValidateRequestObject = function(Request) {
 exports.Handler = function(socket, Request) {
     socket.get('T', function(T) {
         if (ValidateRequestObject(Request) === true) {
-            T.[Request.Type](Request.Path, Request.Query, function(Err, Reply) {
+            console.log('Request Valid: ' + Request);
+            T[Request.Type](Request.Path, Request.Query, function(Err, Reply) {
                 //Checks to see if there's an error.
                 if (Err) {
                     console.warn(Err);

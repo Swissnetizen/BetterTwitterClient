@@ -1,0 +1,2 @@
+{ "name" : "ResourceRequestHandler",
+  "main" : "./Handler.js" }

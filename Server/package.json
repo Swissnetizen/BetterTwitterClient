@@ -1,0 +1,45 @@
+{
+  "name": "BetterTwitterClientServer",
+  "preferGlobal": false,
+  "version": "0.1.0",
+  "author": "Samarth AGARWAL <samu.agarwal@gmail.com>",
+  "description": "a simple zero-configuration command-line http server",
+  "contributors": [ 
+    {
+      "name": "Samarth AGARWAL",
+      "email": "samu.agarwal@gmail.com"
+    } 
+  ],
+  "bin": {
+    "http-server": "./bin/http-server"
+  },
+  "scripts": {
+    "start": "node ./bin/http-server",
+    "test": "vows --spec --isolate",
+    "predeploy": "echo This will be run before deploying the app",
+    "postdeploy": "echo This will be run after deploying the app"
+  },
+  "main": "./lib/http-server",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodejitsu/http-server.git"
+  },
+  "keywords": [
+    "cli",
+    "http",
+    "server"
+  ],
+  "dependencies" : {
+    "socker.io": "9",
+    "Twit": "*"
+  },
+  "analyze": false,
+  "devDependencies": {
+        "ResourceRequestHandler" : 
+  },
+    
+  "license": "Apache Licence",
+  "engines": {
+    "node": ">=0.6"
+  }
+}
