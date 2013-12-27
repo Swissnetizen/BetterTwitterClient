@@ -1,3 +1,3 @@
-Check LICENCE.md for the legal license.
+[Inactive]Check LICENCE.md for the legal licence.
 
 
